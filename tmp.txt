@@ -1,10 +1,10 @@
-2023-08-27T10:07:18.739879+00:00 app[api]: Release v19 created by user meyssabah@outlook.com
-2023-08-27T10:07:18.739879+00:00 app[api]: Set AWS_ACCESS_KEY_ID config vars by user meyssabah@outlook.com
-2023-08-27T10:07:36.970417+00:00 app[api]: Set AWS_SECRET_ACCESS_KEY config vars by user meyssabah@outlook.com
-2023-08-27T10:07:36.970417+00:00 app[api]: Release v20 created by user meyssabah@outlook.com
-2023-08-27T10:07:56.000000+00:00 app[api]: Build started by user meyssabah@outlook.com
-2023-08-27T10:09:43.056225+00:00 app[api]: Deploy faaf36d1 by user meyssabah@outlook.com
-2023-08-27T10:09:43.056225+00:00 app[api]: Release v21 created by user meyssabah@outlook.com
-2023-08-27T10:09:50.000000+00:00 app[api]: Build succeeded
-2023-08-27T10:10:12.237486+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=teahouse-231d15547b7f.herokuapp.com request_id=a27cd74e-e268-4a42-87e3-899871c3b99b fwd="213.100.206.58" dyno= connect= service= status=503 bytes= protocol=https
-2023-08-27T10:10:12.744469+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/favicon.ico" host=teahouse-231d15547b7f.herokuapp.com request_id=bc54e388-9568-45ee-9f2f-360b2cfe76ca fwd="213.100.206.58" dyno= connect= service= status=503 bytes= protocol=https
+2023-08-27T10:47:58.562194+00:00 app[web.1]: [2023-08-27 10:47:58 +0000] [8] [INFO] Worker exiting (pid: 8)
+2023-08-27T10:47:58.575192+00:00 app[web.1]: [2023-08-27 10:47:58 +0000] [2] [ERROR] Worker (pid:7) exited with code 3
+2023-08-27T10:47:58.578702+00:00 app[web.1]: [2023-08-27 10:47:58 +0000] [2] [ERROR] Worker (pid:8) was sent SIGTERM!
+2023-08-27T10:47:58.675596+00:00 app[web.1]: [2023-08-27 10:47:58 +0000] [2] [ERROR] Shutting down: Master
+2023-08-27T10:47:58.675628+00:00 app[web.1]: [2023-08-27 10:47:58 +0000] [2] [ERROR] Reason: Worker failed to boot.
+2023-08-27T10:47:58.754169+00:00 heroku[web.1]: Process exited with status 3
+2023-08-27T10:47:58.775864+00:00 heroku[web.1]: State changed from starting to crashed
+2023-08-27T10:48:00.000000+00:00 app[api]: Build succeeded
+2023-08-27T10:48:10.105359+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=teahouse-231d15547b7f.herokuapp.com request_id=8c614c5c-a0ea-43de-ab15-9ba79f772429 fwd="213.100.206.58" dyno= connect= service= status=503 bytes= protocol=https
+2023-08-27T10:48:10.484963+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=teahouse-231d15547b7f.herokuapp.com request_id=948c1c0e-8506-4d65-9ffb-b7080b02bfee fwd="213.100.206.58" dyno= connect= service= status=503 bytes= protocol=https
