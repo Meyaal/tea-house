@@ -1,1 +1,0 @@
-web: gunicorn teahouse.teahouse.wsgi --log-file -
