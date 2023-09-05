@@ -59,14 +59,14 @@ Our Organic Tea Project aims to establish a thriving business centered around th
 
 3. Business Description
 
-a. Company Overview
+### Company Overview
 
 * PP5 TEA house E-commerce is an online platform that caters to customers searching for teas with natural flavors. 
 * Organic means tea that is grown without the use of chemical pesticides and artificial fertilizers. 
 * Locally sourced tea signifies better working conditions and increased biodiversity. 
 * The range of organic teas is extensive, and you can choose anything from blck tea, green tea and spicy tea. 
 
-b. Target Market
+#### Target Market
 
 My target market includes:
 
@@ -87,79 +87,39 @@ Green Tea
 Spiced Tea 
 Organic Tea 
 
-5. Marketing & Sales Strategy
-a. Online Presence & Branding
+### Marketing & Sales Strategy
+#### Online Presence & Branding
 
 Develop a visually appealing and user-friendly website.
 Optimize the website for search engines (SEO) to increase organic traffic. Create and maintain social media profiles to engage with customers and promote products.
 
-b. Advertising & Promotion
+#### Advertising & Promotion
 
 Utilize targeted online advertising (Facebook Ads) to reach potential customers. Offer promotions and discounts to incentivize first-time customers and encourage repeat business.
 Collaborate with influencers and bloggers for product reviews and endorsements.
 
-c. Customer Retention & Loyalty
+#### Customer Retention & Loyalty
 
 Implement a rewards/loyalty program to encourage repeat purchases. Offer personalized product recommendations based on customer preferences and browsing history. Provide exceptional customer service, including responsive support and hassle-free returns.
 
-6. Operations & Management
-a. Inventory Management
+### Operations & Management
+#### Inventory Management
 
 * Utilize an inventory management system to track stock levels and reorder products as necessary.
 * Develop relationships with reliable suppliers to ensure product availability and timely delivery.
 
-b. Order Fulfillment & Shipping
+#### Order Fulfillment & Shipping
 
 * Offer multiple shipping options, including expedited and international shipping. Partner with reliable shipping carriers to ensure timely and accurate delivery of orders.
 
-c. Customer Support
+#### Customer Support
 
-* Provide customer support through multiple channels, including email, phone, and live chat. Financial Projections
-Develop detailed financial projections for the first three years of operation, including revenue, expenses, and net income. 
-* Regularly review and adjust financial projections based on actual performance and market trends.
+* Offer support via email, phone, and live chat.
+Financial Projections
 
-7. Risk Management & Contingency Plan
-* Identify potential risks and develop contingency plans to address them. Monitor market trends and competitors to identify emerging opportunities and threats.
-* Establish a reserve fund to cover unexpected expenses and mitigate financial risks.
+* Create detailed 3-year financial projections.
+Regularly adjust projections based on performance and trends.
 
-8. Milestones & Timeline
-* Launch the platform within six months, followed by ongoing development and improvement. Achieve a steady growth in customer base and revenue within the first year of operation.
-* Expand product offerings and market reach within the first two years of operation.
-
-9. Expansion Plan
-As the business grows and achieves its initial milestones, I will consider the following expansion opportunities:
-
-a.  Product Line Expansion
-
-* Continuously explore new product categories and trends to diversify our offerings.
-* Collaborate with local artisans and small businesses to offer unique and exclusive products.
-
-b. Geographic Expansion
-
-* Analyze market demand and shipping logistics to identify potential new markets for expansion.
-
-c. Technology & Innovation
-
-* Invest in cutting-edge technologies to enhance the user experience, such as augmented reality (AR) product visualization and AI-powered recommendations.
-
-10. Exit Strategy
-In the event that the business needs to pivot or the founders decide to exit, we will consider the following options:
-
-a. Merger or Acquisition
-
-* Identify potential strategic partners or larger e-commerce platforms that may be interested in acquiring the business.
-
-b. Management Buyout
-
-* Enable the existing management team to buy the shares of the company and take control of the business operations.
-
-c. Initial Public Offering (IPO)
-
-* If the business achieves significant growth and market share, consider going public to raise additional capital and provide liquidity for shareholders.
-
-Conclusion
-
-The PP5 TEA house E-commerce Website aims to become a trusted and convenient destination for customers seeking organic tea and wellness. By prioritizing customer satisfaction, offering a diverse and competitive product selection, and continuously improving our online website, I believe I can achieve long-term success and growth in the competitive e-commerce market.
 
 ## Web Marketing Strategy
 The PP5 E-Commerce website aims to attract and convert visitors into customers by implementing a comprehensive web marketing strategy that focuses on the following key channels and tactics:
@@ -178,7 +138,82 @@ The PP5 E-Commerce website aims to attract and convert visitors into customers b
 
 * Conversion Rate Optimization (CRO): Continuously optimize the website's design, user experience, and calls-to-action to improve conversion rates.
 
-By implementing this web marketing strategy, the PP5 House Stock E-Commerce website aims to increase online visibility, drive more traffic, and ultimately boost sales and revenue.
+Facebook
+mailchip 
+hotjar
+
+## UX (User Experience)
+
+UX, or User Experience, refers to the overall experience a user has while interacting with a product, service, or website. It encompasses various aspects of design, functionality, and usability to create a seamless and enjoyable experience for users. Here are some key elements to consider when creating a positive UX for the Home Store & More e-commerce webstore:
+
+* Navigation: Prioritize intuitive and easy-to-follow navigation.
+* Responsive Design: Optimize for various devices to ensure consistent usage.
+* Engaging Visuals: Employ high-quality visuals for products and content.
+* Speedy Performance: Ensure fast loading times for smooth browsing.
+* Checkout: Simplify the checkout process for quick transactions.
+* Personalized Touch: Offer tailored suggestions and content to users.
+* Effective Search: Implement robust search functionality for product discovery.
+* Trustworthy Reviews: Showcase genuine user reviews and ratings.
+* Mobile Adaptation: Design for mobile use, catering to mobile shoppers.
+* Accessibility: Ensure inclusivity with accessible design features.
+* Brand Consistency: Maintain uniform branding throughout the site.
+* Responsive Support: Provide easy access to customer assistance.
+* Secure Experience: Assure safe transactions and data protection.
+* Feedback Incorporation: Allow user input to enhance the experience.
+* Performance Testing: Ensure smooth site operation during traffic spikes.
+
+
+<hr>
+
+## User stories & Agile tools
+
+See the GitHub Projects section was used as a [Kanban board]() for the development of this project, which made it possible to break down the project execution into subtasks and make it easier to complete and track project progress.
+[User stories]() were used to break down the project into sub-tasks and placed on the Kanban board to work on them and track progress.
+
+<hr>
+
+Site Administrator Goals - for this E-Commerce:
+
+* Efficient Product Management: Enable easy addition, editing, and removal of products and categories.
+
+* Order Management: Develop a comprehensive system for overseeing customer orders, tracking shipping, and handling returns.
+
+* User Management: Implement a user system to monitor activity, address concerns, and manage registered users.
+
+* Secure Payment Processing: Ensure secure handling of payment data, showcasing commitment to security.
+
+* Marketing and Promotion: Manage campaigns, promotions, and email marketing to boost traffic and sales.
+
+* Content Management: Utilize an accessible CMS for updating banners, blog posts, and static pages.
+
+* Customer Support: Create a support system for addressing inquiries and feedback promptly.
+
+* System Maintenance and Updates: Regularly maintain and update the system for security and improvements.
+
+* Scalability and Performance: Optimize performance and plan for growth to accommodate future demands.
+
+
+## Design Structure
+Design Structure for this e-commerce webstore:
+
+1. Header: The header section should include the website's logo, a search bar, user account options (login, register, account settings), and a shopping cart icon with the number of items in the cart. Additionally, a responsive navigation menu should be present, featuring the main product categories and any other essential pages, such as "About Us" or "Contact."
+
+2. Homepage: The homepage should feature a large, attention-grabbing banner or carousel showcasing popular or new products, special offers, or seasonal promotions. Below the banner, display a selection of featured products and categories, along with any relevant promotional material. Consider including a section for customer reviews or testimonials to build trust with potential buyers.
+
+3. Product Listing Page: Design a clean and organized layout for the product listing page, displaying products in a grid format with clear images, product names, prices, and a brief description. Include pagination for easy browsing, as well as filtering and sorting options to help users find what they're looking for quickly.
+
+4. Product Detail Page: The product detail page should include high-quality images of the product, a clear title, price, and availability information. Provide a detailed description, specifications, and any additional product information. Include an "Add to Cart" button, and display related products or upsell items to encourage additional purchases.
+
+5. Shopping Cart Page: Create a clear and organized layout for the shopping cart page, displaying the selected products with images, names, prices, and quantities. Allow users to update the quantity or remove items from their cart, and display the subtotal, shipping fees, taxes, and total amount. Include a "Proceed to Checkout" button, as well as options to continue shopping or save the cart for later.
+
+6. Checkout Page: Design a simple and user-friendly checkout process, with clear input fields for shipping and billing information, as well as a summary of the order details. Offer options for guest checkout or user registration, and provide a clear indication of the payment process and security measures in place.
+
+7. User Account Dashboard: Create an organized dashboard for registered users, displaying options to view and edit account information, manage shipping addresses, view order history, and access any other relevant features.
+
+8. Footer: The footer section should include links to important pages, such as "Terms & Conditions," "Privacy Policy," and "Return Policy." Also, provide contact information, social media icons, and a newsletter signup form for users who want to stay updated on promotions and news.
+
+
+
 
 
 
