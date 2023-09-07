@@ -53,15 +53,25 @@ Scalability and Extensibility: Build a solid foundation that allows for future e
 ## Business Plan
 
 1. Executive Summary:
-Our Organic Tea Project aims to establish a thriving business centered around the sale of high-quality, sustainably sourced, and organically grown tea products. We are committed to offering a diverse range of premium teas while prioritizing environmental responsibility and customer satisfaction. Our business will operate both online and potentially through a physical tea shop, providing customers with a seamless shopping experience and a chance to explore the world of organic tea.
+Project Name: PP5 E-commerce Website
 
-2. Our objectives for launching an online platform dedicated to providing household items and supplies are centered around creating a seamless shopping experience for customers while offering a comprehensive and competitive range of products. We are committed to ensuring customer satisfaction, achieving growth, and contributing to market success.
+Website: The PP5 E-commerce Website is designed to provide customers with a simple and convenient way to purchase household items and essentials online. Our website offers a wide range of products at competitive prices, with a strong emphasis on customer satisfaction and user experience.
+
+2. Objectives
+
+* Create a user-friendly online platform for customers to purchase household items and essentials.
+
+* Offer a wide range of products, ensuring a diverse and competitive inventory.
+
+* Prioritize customer satisfaction through an exceptional user experience and prompt, responsive customer service.
+
+* Achieve steady growth in the customer base, revenue, and market share.
 
 3. Business Description
 
 ### Company Overview
 
-* PP5 TEA house E-commerce is an online platform that caters to customers searching for teas with natural flavors. 
+* PP5 E-commerce is an online platform that caters to customers searching for teas with natural flavors. 
 * Organic means tea that is grown without the use of chemical pesticides and artificial fertilizers. 
 * Locally sourced tea signifies better working conditions and increased biodiversity. 
 * The range of organic teas is extensive, and you can choose anything from blck tea, green tea and spicy tea. 
@@ -91,7 +101,7 @@ Organic Tea
 #### Online Presence & Branding
 
 Develop a visually appealing and user-friendly website.
-Optimize the website for search engines (SEO) to increase organic traffic. Create and maintain social media profiles to engage with customers and promote products.
+Optimize the website for search engines (SEO) to increase organic traffic. Create and maintain social media profiles as a facebook page to engage with customers and promote products.
 
 #### Advertising & Promotion
 
@@ -122,25 +132,40 @@ Regularly adjust projections based on performance and trends.
 
 
 ## Web Marketing Strategy
-The PP5 E-Commerce website aims to attract and convert visitors into customers by implementing a comprehensive web marketing strategy that focuses on the following key channels and tactics:
 
-* Search Engine Optimization (SEO): Improve the website's organic search ranking by optimizing content, structure, and technical aspects for search engines.
+Search Engine Optimisation is an important part of any marketing strategy in an age were Google and Googling have become verbs. Whether a website comes up on the first page of a search via relevant keywords is a huge part of a brand being 'seen'. A website’s search engine ranking involves allowing its pages to be crawled and indexed by a robot/ bot. To make sure that Leabhar Maith gives the bots the information they need to read the site quickly, a robots.txt file and a sitemap.xml have been generated and are included in the code repository. I have blocked off accounts information from this, as there is no benefit for google to crawl such pages, and the files may well contain private information relating to a user's bank account, transactions and private contact details.## Facebook page
+I have Created a Facebook Business Page can be an important step in business's social media marketing strategy. It allows the business to have a public presence on Facebook, providing a space for you to share updates, post about products or services, engage with customers, and reach new audiences.
 
-* Content Marketing: Create engaging and informative content, such as blog posts and articles, to attract potential customers and establish the website as an industry authority.
 
-* Social Media Marketing: Engage with users on popular social media platforms to promote content, share updates, and build brand awareness.
+## MailChip 
 
-* Email Marketing: Utilize email campaigns to keep subscribers informed about promotions, new products, and other updates.
+Key Features
 
-* Influencer Marketing: Partner with influencers in the home equipment and decor niche to reach a larger audience and boost brand visibility.
+* Email Marketing: Effortlessly craft, send, and track personalized email campaigns, keeping your customers informed and engaged with your products and services.
 
-* Affiliate Marketing: Encourage partners to promote the website and its products through an affiliate program.
+* Subscriber Management: Organize subscriber data, segment audiences based on preferences, and create targeted campaigns for improved conversion rates.
 
-* Conversion Rate Optimization (CRO): Continuously optimize the website's design, user experience, and calls-to-action to improve conversion rates.
+* Automation: Configure automated workflows for sending personalized and timely messages, such as welcome emails for new subscribers or reminders for abandoned carts.
 
-Facebook
-mailchip 
-hotjar
+* Analytics and Reporting: Monitor email campaign performance through comprehensive analytics, enabling data-driven decisions to fine-tune your marketing strategies.
+
+* Signup Forms: Embed customizable signup forms on your website, simplifying the subscription process for visitors.
+
+Integration Steps
+
+To integrate MailChimp with the PP5 E-commerce website:
+
+* Sign up or log in to your MailChimp account.
+* Get your API key from the MailChimp dashboard.
+* In the PP5 website admin panel, go to MailChimp settings.
+* Enter your API key and save.
+* Configure settings (audience, templates, triggers).
+* Embed the signup form on your website.
+* Test integration with a sample email.
+
+Support and Resources
+
+Learn more about MailChimp at their official website (https://mailchimp.com/) and knowledge base (https://mailchimp.com/help/).
 
 ## UX (User Experience)
 
@@ -172,7 +197,7 @@ See the GitHub Projects section was used as a [Kanban board]() for the developme
 
 <hr>
 
-Site Administrator Goals - for this E-Commerce:
+## Site Administrator Goals - for this E-Commerce:
 
 * Efficient Product Management: Enable easy addition, editing, and removal of products and categories.
 
@@ -194,31 +219,129 @@ Site Administrator Goals - for this E-Commerce:
 
 
 ## Design Structure
+
 Design Structure for this e-commerce webstore:
 
-1. Header: The header section should include the website's logo, a search bar, user account options (login, register, account settings), and a shopping cart icon with the number of items in the cart. Additionally, a responsive navigation menu should be present, featuring the main product categories and any other essential pages, such as "About Us" or "Contact."
+1. Header: Include logo, search bar, user account options (login, register, account settings), and shopping cart icon with item count. Add responsive navigation menu with main product categories and essential pages (e.g., "About Us" or "Contact").
 
-2. Homepage: The homepage should feature a large, attention-grabbing banner or carousel showcasing popular or new products, special offers, or seasonal promotions. Below the banner, display a selection of featured products and categories, along with any relevant promotional material. Consider including a section for customer reviews or testimonials to build trust with potential buyers.
+2. Homepage: Feature attention-grabbing banner/carousel for popular/new products, special offers, or seasonal promotions. Below, display featured products, categories, and promotional content. Consider customer reviews/testimonials for trust-building.
 
-3. Product Listing Page: Design a clean and organized layout for the product listing page, displaying products in a grid format with clear images, product names, prices, and a brief description. Include pagination for easy browsing, as well as filtering and sorting options to help users find what they're looking for quickly.
+3. Product Listing Page: Create clean grid layout with clear images, product names, prices, and brief descriptions. Add pagination, filtering, and sorting options for quick product search.
 
-4. Product Detail Page: The product detail page should include high-quality images of the product, a clear title, price, and availability information. Provide a detailed description, specifications, and any additional product information. Include an "Add to Cart" button, and display related products or upsell items to encourage additional purchases.
+4. Product Detail Page: Include high-quality product images, title, price, availability info, detailed description, specifications, and related/upsell products. Add "Add to Cart" button for easy purchasing.
 
-5. Shopping Cart Page: Create a clear and organized layout for the shopping cart page, displaying the selected products with images, names, prices, and quantities. Allow users to update the quantity or remove items from their cart, and display the subtotal, shipping fees, taxes, and total amount. Include a "Proceed to Checkout" button, as well as options to continue shopping or save the cart for later.
+5. Shopping Cart Page: Organize selected products with images, names, prices, and quantities. Allow item updates/removal and display subtotal, shipping fees, taxes, and total amount. Include "Proceed to Checkout" button and continue shopping/save cart options.
 
-6. Checkout Page: Design a simple and user-friendly checkout process, with clear input fields for shipping and billing information, as well as a summary of the order details. Offer options for guest checkout or user registration, and provide a clear indication of the payment process and security measures in place.
+6. Checkout Page: Design simple, user-friendly checkout with clear input fields for shipping/billing info and order summary. Offer guest checkout or user registration with clear payment process and security information.
 
-7. User Account Dashboard: Create an organized dashboard for registered users, displaying options to view and edit account information, manage shipping addresses, view order history, and access any other relevant features.
+7. User Account Dashboard: Organize dashboard for registered users with options to view/edit account info, manage addresses, view order history, and access relevant features.
 
-8. Footer: The footer section should include links to important pages, such as "Terms & Conditions," "Privacy Policy," and "Return Policy." Also, provide contact information, social media icons, and a newsletter signup form for users who want to stay updated on promotions and news.
+8. Footer: Include links to important pages (e.g., "Terms & Conditions," "Privacy Policy," "Return Policy"), contact info, social media icons, and newsletter signup form.
 
-
-
-
+9. Integration with MailChimp enhances email marketing campaigns, subscriber management, and automation workflows for businesses, keeping customers informed about new products, promotions, and updates.## Facebook Business page.Structure
 
 
+## Functional Structure
 
+Home Page: The central gateway to the website, providing an overview of its offerings, featuring highlighted products, and offering quick links to various sections.
 
+Product Listing/Catalog: The comprehensive product listing, complete with filtering and sorting options based on criteria like price, category, brand, and more.
+
+Product Detail Pages: Individual pages for each product, delivering extensive information including images, descriptions, specifications, customer reviews, and pricing.
+
+Shopping Cart:
+A space where customers can review, adjust quantities, view the total price, and proceed to the checkout process with their selected items.
+
+Checkout Process: A series of pages or a single page where customers input their shipping details, choose a payment method, review their order, and complete their purchase.
+
+User Account: A section enabling user registration, login, and management of account particulars, encompassing order history, saved payment methods, and personal details.
+
+Customer Service/Help Center: A repository containing FAQs, contact information, shipping and return policies, and other valuable resources for customers.
+
+About Us: A section furnishing company background, history, mission, and values.
+
+Search Function: A ubiquitous search bar at the top of each page, facilitating users in finding specific items on the website.
+
+Contact Us: A page housing a contact form, allowing customers to get in touch with the business.
+
+Testimonials: A dedicated page showcasing reviews or testimonials from past customers, establishing trust with potential customers.
+
+Footer: A consistent website footer found at the bottom of every page, typically containing links to legal information (such as terms of service and privacy policy), social media profiles, contact details, and sometimes a newsletter signup form.
+
+404 Page: An indispensable element of the website, serving as the error page displayed when users attempt to access a non-existent URL or encounter broken links. A well-designed 404 page can retain users and guide them back to the main site, mitigating frustration and confusion.
+
+## Wireframes
+
+## Features
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Python
+- Django
+- SQLite (development) / PostgreSQL (production)
+- Heroku for deployment
+
+### Languages
+
+- Python
+- JavaScript
+- HTML5
+- CSS3
+
+## Frameworks, Libraries, Programs
+
+ ### Cloud Hosting
+
+* [Amazon Web Services](https://signin.aws.amazon.com/): AWS is a comprehensive cloud computing platform that offers a wide range of services, including computing power, storage, and databases. 
+### Database
+* [PostgreSQL](https://www.postgresql.org/): The database used to store All of the data.
+* [Django](https://www.djangoproject.com/): python framework used to create all the backend.
+- boto3                     
+- dj-database-url                           
+- django-allauth            
+- django-storages          
+- gunicorn 
+- psycopg2  
+- stripe               
+
+## Tools
+- [Google Fonts:](https://fonts.google.com/) Was used to to incorporate font styles.  
+- [Font Awesome](https://fontawesome.com/): was used to create the icons used on the website.
+- [Bootstrap](https://getbootstrap.com/) Was used to create the front-end design.
+- [Gitpod:](https://Gitpod.io/) Gitpod was used as IDE to commit and push the project to GitHub.
+- [GitHub:](https://github.com/) Was used as a version control system to manage the code.
+- [Am I Responsive](http://ami.responsivedesign.is/) to generate an image showcasing the website's responsiveness to different screen sizes
+- [Pip3](https://pypi.org/project/pip/): is the package manager to install Python modules and libraries.
+- [Gunicorn](https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/gunicorn/): "Green Unicorn" is a Python Web Server Gateway to translate HTTP Requests for Python to understand.
+- [Spycopg2](https://pypi.org/project/psycopg2/): PostgreSQL database adapter so I can manage the Database in Python.
+- [Heroku](https://dashboard.heroku.com/): the hosting service used to host the website.
+- [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/open/): was used to debug the website.
+- [W3C Validator](https://validator.w3.org/): was used to validate HTML5 code for the website.
+- [W3C CSS validator](https://jigsaw.w3.org/css-validator/): was used to validate CSS code for the website.
+[Github Projects and Kanban board]() was used to track the progress of the project in general and of every application in the project.
+
+- [JSHint](https://jshint.com/): was used to validate Java Script code for the website.
+- [Lucid](https://lucid.app/): was used to create database schema diagram for the website.
+- [Figma](https://www.figma.com/):
+was used for create wireframes for deskop and mobile screen.
+
+## Testing
+
+#### Manual testing
+
+#### Browsers Tested
+
+Testing has been carried out on the  following browsers:
+
+- Google Chrome
+- Firefox
+- Microsoft Edge
+- Safari iOS
+
+#### Code validation
 
 
 
