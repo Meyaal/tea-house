@@ -3,7 +3,10 @@
 #### TEA house is a full stack web application developed as a portfolio project for The Code Institute's Full Stack Software Development (eCommerce) Diploma program. 
 
 
-## Overview
+## Live Webbsite
+
+
+## Introduction
  Welcome to TEA house Website, this is an e-Commerce Webstore that was designed and developed as an Portfolio Project for The Code Institute's Full Stack Software Development (eCommerce) Diploma programme.
 
  TEA house website for organic tea, a digital oasis for all tea enthusiasts and environmentally conscious customers. Here on our platform, we strive to provide a seamless and rewarding experience for you to explore and discover our range of organic tea. On our homepage, you're greeted with enticing images of fresh tea leaves and cups filled with steaming tea. With a clean and user-friendly design, you can easily navigate through our different categories of organic tea. By clicking on each tea variety, you're not only presented with a description of its flavor profile and origin but also with information about its organic cultivation methods and sustainability aspects.
@@ -14,161 +17,51 @@
 
  The project is for assessment purposes only and will not accept any genuine credit or debit card payments and any purchases or shoppin made will not be fullfilled. The TEA house Store is a full stack, E-commerce, web application offering affordable, full ctock home products and solutions to a growing and diverse target audience.
 
- * User Interface and Design: The website features a visually appealing and modern design, making it easy for users to browse and navigate the site. The layout is responsive, ensuring that the website looks great on various devices, including desktops, laptops, tablets, and smartphones.
 
-* Product Catalog: TEA house offers a wide range of orgaic TEA products. On the homepage, the user is greeted with enticing images of fresh tea leaves and cups filled with steaming tea. With a clean and user-friendly design, you can easily navigate through our different categories of organic tea. By clicking on each tea variety, you're not only presented with a description of its flavor profile and origin but also with information about its organic cultivation methods and sustainability aspects.
-
-* Search Functionality: The website includes a search feature that allows users to quickly find specific products by entering relevant keywords or phrases. We've included a dynamic search function that allows you to filter tea varieties based on your preferences, enabling you to quickly find your favorites. Additionally, we have a "Tea Specialists" section where our dedicated team shares their expertise, offering brewing techniques and flavor combinations.
-
-* User Accounts and Authentication: TEA house has implemented user account creation and authentication, allowing users to create profiles, save their preferences, and view their order history. This feature demonstrates the developer's ability to integrate essential user management components in an e-commerce platform.
-
-* Shopping Cart and Checkout: the website also offers a smooth and secure checkout process, where you can select your desired tea varieties and complete your order with ease. We've implemented security measures to safeguard your personal information and payment details. Though it doesn't accept real credit or debit card payments, the website demonstrates the developer's understanding of integrating a seamless and secure checkout experience.
-
-* Performance and Optimization: TEA house website is built with performance in mind, ensuring fast load times and an optimized user experience. This aspect showcases the developer's knowledge of best practices in web development and their ability to create a high-performing e-commerce platform.
-
-* Blog: To further enhance your experience on our website, we've included a blog section that's regularly updated with articles on tea history, brewing tips, sustainability initiatives, and much more. This is a space where you can learn more and become an even more informed tea enthusiast.
-
-Overall, TEA house website is a well-rounded e-commerce web application that demonstrates the developer's expertise in full stack web development, specifically in the context of e-commerce. The website is an excellent portfolio project that highlights their proficiency in various aspects of web development, from front-end design to back-end functionality, and provides a strong foundation for potential future projects.
-
-## Projects goals
-
-The primary goals of the TEA house e-commerce webstore project are:
-
-Portfolio Showcase: Demonstrate the developer's skills and capabilities in full-stack web development, specifically in the context of e-commerce, as part of The Code Institute's Full Stack Software Development (eCommerce) Diploma program.
-
-User Experience: Create a visually appealing, responsive, and user-friendly web application that offers an intuitive browsing and shopping experience for a diverse and growing target audience.
-
-Product Catalog: Design a comprehensive product catalog with a wide range of tea products for easy browsing and navigation.
-
-Search and Filter: Implement search functionality and filtering options, allowing users to quickly locate specific products and tailor their browsing experience according to their preferences.
-
-User Accounts and Authentication: Integrate user account creation and authentication features, enabling users to create profiles, save their preferences, and view their order history.
-
-Shopping Cart and Checkout: Develop a seamless shopping cart system and a simulated checkout process that demonstrates the understanding and implementation of a secure and user-friendly e-commerce transaction flow.
-
-Performance and Optimization: Optimize the website for performance and fast load times, ensuring a smooth and enjoyable user experience.
-
-Scalability and Extensibility: Build a solid foundation that allows for future expansion and refinement, making it possible to add new products, and functionalities as the platform grows.
-
-## Business Plan
-
-1. Executive Summary:
-Project Name: PP5 E-commerce Website
-
-Website: The PP5 E-commerce Website is designed to provide customers with a simple and convenient way to purchase household items and essentials online. Our website offers a wide range of products at competitive prices, with a strong emphasis on customer satisfaction and user experience.
-
-2. Objectives
-
-* Create a user-friendly online platform for customers to purchase household items and essentials.
-
-* Offer a wide range of products, ensuring a diverse and competitive inventory.
-
-* Prioritize customer satisfaction through an exceptional user experience and prompt, responsive customer service.
-
-* Achieve steady growth in the customer base, revenue, and market share.
-
-3. Business Description
-
-### Company Overview
-
-* PP5 E-commerce is an online platform that caters to customers searching for teas with natural flavors. 
-* Organic means tea that is grown without the use of chemical pesticides and artificial fertilizers. 
-* Locally sourced tea signifies better working conditions and increased biodiversity. 
-* The range of organic teas is extensive, and you can choose anything from blck tea, green tea and spicy tea. 
-
-#### Target Market
-
-My target market includes:
-
-These individuals actively seek products that promote overall well-being. They are interested in the health benefits associated with different types of tea, such as antioxidants, relaxation, and immune support. Health enthusiasts appreciate organic options that align with their lifestyle choices.
-
-Consumers who have a passion for tea and enjoy exploring new flavors and blends. They appreciate the nuances of different tea varieties and are likely to appreciate our range of premium organic teas and unique blends. Individuals who prioritize self-care and mindfulness. They are drawn to products that promote relaxation and stress relief, and they view tea as a way to enhance their daily routines.
-
-People who are environmentally aware and make purchasing decisions based on products' ecological impact. They are likely to resonate with our commitment to sourcing organic teas and using eco-friendly packaging materials.
-
-Busy individuals who prefer online shopping for its convenience.
-
-People looking for thoughtful and meaningful gifts for friends, family, or colleagues. Our premium organic teas and tea accessories make ideal gifts for various occasions.
-
-Products & Services PP5 TEA house E-commerce offers the following product categories:
-
-Black Tea
-Green Tea
-Spiced Tea 
-Organic Tea 
-
-### Marketing & Sales Strategy
-#### Online Presence & Branding
-
-Develop a visually appealing and user-friendly website.
-Optimize the website for search engines (SEO) to increase organic traffic. Create and maintain social media profiles as a facebook page to engage with customers and promote products.
-
-#### Advertising & Promotion
-
-Utilize targeted online advertising (Facebook Ads) to reach potential customers. Offer promotions and discounts to incentivize first-time customers and encourage repeat business.
-Collaborate with influencers and bloggers for product reviews and endorsements.
-
-#### Customer Retention & Loyalty
-
-Implement a rewards/loyalty program to encourage repeat purchases. Offer personalized product recommendations based on customer preferences and browsing history. Provide exceptional customer service, including responsive support and hassle-free returns.
-
-### Operations & Management
-#### Inventory Management
-
-* Utilize an inventory management system to track stock levels and reorder products as necessary.
-* Develop relationships with reliable suppliers to ensure product availability and timely delivery.
-
-#### Order Fulfillment & Shipping
-
-* Offer multiple shipping options, including expedited and international shipping. Partner with reliable shipping carriers to ensure timely and accurate delivery of orders.
-
-#### Customer Support
-
-* Offer support via email, phone, and live chat.
-Financial Projections
-
-* Create detailed 3-year financial projections.
-Regularly adjust projections based on performance and trends.
-
-
-## Web Marketing Strategy
-
-Search Engine Optimisation is an important part of any marketing strategy in an age were Google and Googling have become verbs. Whether a website comes up on the first page of a search via relevant keywords is a huge part of a brand being 'seen'. A website’s search engine ranking involves allowing its pages to be crawled and indexed by a robot/ bot. To make sure that Leabhar Maith gives the bots the information they need to read the site quickly, a robots.txt file and a sitemap.xml have been generated and are included in the code repository. I have blocked off accounts information from this, as there is no benefit for google to crawl such pages, and the files may well contain private information relating to a user's bank account, transactions and private contact details.## Facebook page
-I have Created a Facebook Business Page can be an important step in business's social media marketing strategy. It allows the business to have a public presence on Facebook, providing a space for you to share updates, post about products or services, engage with customers, and reach new audiences.
-
-
-## MailChip 
-
-Key Features
-
-* Email Marketing: Effortlessly craft, send, and track personalized email campaigns, keeping your customers informed and engaged with your products and services.
-
-* Subscriber Management: Organize subscriber data, segment audiences based on preferences, and create targeted campaigns for improved conversion rates.
-
-* Automation: Configure automated workflows for sending personalized and timely messages, such as welcome emails for new subscribers or reminders for abandoned carts.
-
-* Analytics and Reporting: Monitor email campaign performance through comprehensive analytics, enabling data-driven decisions to fine-tune your marketing strategies.
-
-* Signup Forms: Embed customizable signup forms on your website, simplifying the subscription process for visitors.
-
-Integration Steps
-
-To integrate MailChimp with the PP5 E-commerce website:
-
-* Sign up or log in to your MailChimp account.
-* Get your API key from the MailChimp dashboard.
-* In the PP5 website admin panel, go to MailChimp settings.
-* Enter your API key and save.
-* Configure settings (audience, templates, triggers).
-* Embed the signup form on your website.
-* Test integration with a sample email.
-
-Support and Resources
-
-Learn more about MailChimp at their official website (https://mailchimp.com/) and knowledge base (https://mailchimp.com/help/).
+## UX - User Experience
+
+See the GitHub Projects section was used as a [Kanban board]() for the development of this project, which made it possible to break down the project execution into subtasks and make it easier to complete and track project progress.
+[User stories]() were used to break down the project into sub-tasks and placed on the Kanban board to work on them and track progress.
+
+### User Stories
+
+### Admin 
+- As an admin want a panel to create a blog post.
+- As an admin want a panel to edit a blog post.
+- As an admin want a panel to delete a blog post.
+- As an admin I can log in so that I can access superuser privileges.
+- As an admin I want a product upload form so that I can upload products on the site.
+- As an admin I want a product edit form so that I can edit products on the site.
+- As an admin I want a product delete so that I can delete products on the site.
+
+
+### User
+- As a user I can create an account so that I can save and secure my details.
+- As a user I can log in so that I can access my account.
+- As a user I can log out so that I can secure my account.
+- As a user I can view products so that I can choose one to buy.
+- As a user I can view product details so that I can learn more about an item.
+- As a user I have a filter feature so that I can filter the products.
+- As a user I have a search feature so that I can search the database of products.
+- As a user I can leave a review on the product so that I can give feedback.
+- As a user I have a review edit button so that I can ammend my mistakes.
+- As a user I have a review delete button so that I can delete a review.
+- As a user I want a shopping bag so that I can add prodcts to it.
+- As a user I want an edit bag button so that I can edit quantity in my shopping bag.
+- As a user I was a button so that I can delete an item from my bag.
+- As a user I want a total so that I can see the total cost of my shopping bag.
+- As a user I want a checkout so that I can checkout securely.
+- As a user I want a blog page so that I can view blog posts.
+- As a user I want a contact page so that I can send a message to the admin.
+- As a user I want a navigation bar so that I can nav the website.
+- As a user I want an FAQ's page so that I can find out more info.
+- As a user I have access to a privacy policy so that I can know my rights.
+- As a user I can view a social media page so that I can share the site.
+- As a user I have a landing page so that I can land at the site homepage.
+- As a user I have messages so that I can receive feedback on my actions.
+- As a user I can avail of a responsive design so that I can view the app on mobile or desktop devices.
 
 ## UX (User Experience)
-
 UX, or User Experience, refers to the overall experience a user has while interacting with a product, service, or website. It encompasses various aspects of design, functionality, and usability to create a seamless and enjoyable experience for users. Here are some key elements to consider when creating a positive UX for the Home Store & More e-commerce webstore:
 
 * Navigation: Prioritize intuitive and easy-to-follow navigation.
@@ -187,90 +80,39 @@ UX, or User Experience, refers to the overall experience a user has while intera
 * Feedback Incorporation: Allow user input to enhance the experience.
 * Performance Testing: Ensure smooth site operation during traffic spikes.
 
+### Overall Goals
+* Create an e-commerce cloud-hosted Full-Stack web application to sell dental products online.
+* Allow superusers access to full CRUD (create, read, update and delete) functionality on reviews / articles and products respectively.
+* To provide users with a targeted product selection and smooth customer experience when shopping with Exclusive Whitnening.
 
-<hr>
+### Strategy
+* Exclusive Whitnening is focused on selling B2C products to end users. Habits of the consumers have changed recently and many more consumers than ever before have turned to home whitening versus in office whitening procedures. This is where Exclusive Whitnening aims to benefit consumers by offering large discounts on the whitening paraphernalia.
 
-## User stories & Agile tools
+### Site User / Target Audience / Demographic
+* Target market is aimed at anyone old enough to use the products.
+* People who may have stained teeth. eg Smokers, Coffee Drinkers
+* People who are interested in dental articles.
 
-See the GitHub Projects section was used as a [Kanban board]() for the development of this project, which made it possible to break down the project execution into subtasks and make it easier to complete and track project progress.
-[User stories]() were used to break down the project into sub-tasks and placed on the Kanban board to work on them and track progress.
+### Site Goals
+* The site's main purpose is immediately clear
+* Simple navigation that allows the user to find information and resources intuitively
+* User authentication
+* CRUD functionality for superuser(s)
 
-<hr>
+## Design 
 
-## Site Administrator Goals - for this E-Commerce:
+## Web Marketing / Marketing Strategies
+### SEO
+Google keyword research was used to optimise web pages and content to increase ranking in search engines. Both short-tail & Long-tail keywords are used. The “People also ask” and “Related searches” was also used to identify keywords used.
 
-* Efficient Product Management: Enable easy addition, editing, and removal of products and categories.
+### Content Marketing
+A blog post was created so that the website can create and distribute content material to attract and convert audience into first time customers and repeat customers. The main aim of the blog posts is to build trust and loyalty.
 
-* Order Management: Develop a comprehensive system for overseeing customer orders, tracking shipping, and handling returns.
+### Social Media Marketing
+A Facebook business page was set up with the aim of generating growth organically by building a community and encouraging loyalty amongst our target market. The advantage of this is its free and quick to set up and Facebook has a large audience and demographic. The site can connect with customers directly via the Facebook platform and wider global audience. The main aim of the Facebook page is to build and maintain relationship with target audience. Content created can be spread across different social media platforms.
 
-* User Management: Implement a user system to monitor activity, address concerns, and manage registered users.
-
-* Secure Payment Processing: Ensure secure handling of payment data, showcasing commitment to security.
-
-* Marketing and Promotion: Manage campaigns, promotions, and email marketing to boost traffic and sales.
-
-* Content Management: Utilize an accessible CMS for updating banners, blog posts, and static pages.
-
-* Customer Support: Create a support system for addressing inquiries and feedback promptly.
-
-* System Maintenance and Updates: Regularly maintain and update the system for security and improvements.
-
-* Scalability and Performance: Optimize performance and plan for growth to accommodate future demands.
-
-
-## Design Structure
-
-Design Structure for this e-commerce webstore:
-
-1. Header: Include logo, search bar, user account options (login, register, account settings), and shopping cart icon with item count. Add responsive navigation menu with main product categories and essential pages (e.g., "About Us" or "Contact").
-
-2. Homepage: Feature attention-grabbing banner/carousel for popular/new products, special offers, or seasonal promotions. Below, display featured products, categories, and promotional content. Consider customer reviews/testimonials for trust-building.
-
-3. Product Listing Page: Create clean grid layout with clear images, product names, prices, and brief descriptions. Add pagination, filtering, and sorting options for quick product search.
-
-4. Product Detail Page: Include high-quality product images, title, price, availability info, detailed description, specifications, and related/upsell products. Add "Add to Cart" button for easy purchasing.
-
-5. Shopping Cart Page: Organize selected products with images, names, prices, and quantities. Allow item updates/removal and display subtotal, shipping fees, taxes, and total amount. Include "Proceed to Checkout" button and continue shopping/save cart options.
-
-6. Checkout Page: Design simple, user-friendly checkout with clear input fields for shipping/billing info and order summary. Offer guest checkout or user registration with clear payment process and security information.
-
-7. User Account Dashboard: Organize dashboard for registered users with options to view/edit account info, manage addresses, view order history, and access relevant features.
-
-8. Footer: Include links to important pages (e.g., "Terms & Conditions," "Privacy Policy," "Return Policy"), contact info, social media icons, and newsletter signup form.
-
-9. Integration with MailChimp enhances email marketing campaigns, subscriber management, and automation workflows for businesses, keeping customers informed about new products, promotions, and updates.## Facebook Business page.Structure
-
-
-## Functional Structure
-
-Home Page: The central gateway to the website, providing an overview of its offerings, featuring highlighted products, and offering quick links to various sections.
-
-Product Listing/Catalog: The comprehensive product listing, complete with filtering and sorting options based on criteria like price, category, brand, and more.
-
-Product Detail Pages: Individual pages for each product, delivering extensive information including images, descriptions, specifications, customer reviews, and pricing.
-
-Shopping Cart:
-A space where customers can review, adjust quantities, view the total price, and proceed to the checkout process with their selected items.
-
-Checkout Process: A series of pages or a single page where customers input their shipping details, choose a payment method, review their order, and complete their purchase.
-
-User Account: A section enabling user registration, login, and management of account particulars, encompassing order history, saved payment methods, and personal details.
-
-Customer Service/Help Center: A repository containing FAQs, contact information, shipping and return policies, and other valuable resources for customers.
-
-About Us: A section furnishing company background, history, mission, and values.
-
-Search Function: A ubiquitous search bar at the top of each page, facilitating users in finding specific items on the website.
-
-Contact Us: A page housing a contact form, allowing customers to get in touch with the business.
-
-Testimonials: A dedicated page showcasing reviews or testimonials from past customers, establishing trust with potential customers.
-
-Footer: A consistent website footer found at the bottom of every page, typically containing links to legal information (such as terms of service and privacy policy), social media profiles, contact details, and sometimes a newsletter signup form.
-
-404 Page: An indispensable element of the website, serving as the error page displayed when users attempt to access a non-existent URL or encounter broken links. A well-designed 404 page can retain users and guide them back to the main site, mitigating frustration and confusion.
-
-## Wireframes
+### Email Marketing
+Mailchimp is used to gain new customers and retain existing. Mailchimp enables the business to run and analyse the success of newsletter marketing campaigns. Users who register to receive the newsletter are automatically added to weekly newsletter. This strategy was chosen because its free to set up with the current level of business and can scale quickly as the business grows therefore increase conversions and generate more revenue for the business. The users who sign up have already visited the website and are more likely to become customers and therefore low cost to generate sales.
 
 ## Features
 
@@ -292,20 +134,66 @@ Footer: A consistent website footer found at the bottom of every page, typically
 - CSS3
 
 ## Frameworks, Libraries, Programs
-
- ### Cloud Hosting
-
-* [Amazon Web Services](https://signin.aws.amazon.com/): AWS is a comprehensive cloud computing platform that offers a wide range of services, including computing power, storage, and databases. 
-### Database
-* [PostgreSQL](https://www.postgresql.org/): The database used to store All of the data.
-* [Django](https://www.djangoproject.com/): python framework used to create all the backend.
 - boto3                     
 - dj-database-url                           
 - django-allauth            
 - django-storages          
 - gunicorn 
 - psycopg2  
-- stripe               
+
+### Cloud Hosting
+
+* [Amazon Web Services](https://signin.aws.amazon.com/): AWS is a comprehensive cloud computing platform that offers a wide range of services, including computing power, storage, and databases. 
+
+* Create an account at aws.amazon.com
+* Open the S3 application and create an S3 bucket named "ci-pp5
+* Select AWS Region.
+* Uncheck the "Block All Public access setting" & acknowledge that the bucket will be public, it will need to be public in order to allow public access to static files.
+* In the Properties section, navigate to the "Static Website Hosting" section and click edit
+* Under the Properties section, turn on "Static Website Hosting", and set the index.html and the error.html values.
+* In the Permissions section, click edit on the CORS configuration and set the below configuration
+* Click to edit the bucket policy and generate and set the below configuration:
+* Bucket policy
+* Go to the Access Control List and set the List objects permission for everyone under the Public Access section.
+* Open the IAM application to control access to the bucket and set up a user group called
+* Click on Policies, and Create Policy.
+* Click on the JSON tab and import a pre-built Amazon policy called AmazonS3FullAccess:
+* Set the following settings in the JSON tab:
+* Click Review Policy, give it a name and description and click Create Policy.
+* To attach the policy to the group, navigate to Groups, then Permissions, and under Add Permissions, select Attach Policy.
+* To create a user for the group, click Add User, and create one
+* Add the user to the group created, making sure to download the CSV file which contains the user's access credentials.
+* Note the following AWS code in Settings.py. An environment variable called USE_AWS must be set to use these settings, otherwise it will use local storage.
+
+### Database
+[PostgreSQL](https://www.postgresql.org/): The database used to store All of the data.
+
+### [Django](https://www.djangoproject.com/): python framework used to create all the backend.
+
+## [stripe](https://stripe.com): Payment managment.    
+
+* Register for an account at stripe.com
+* Go to Developers section once logged in
+* Go to API keys section
+* Note both the publishable and secret keys
+* In your local environment(env.py) and Heroku, create environment variables STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY with the publishable and secret key values
+os.environ.setdefault('STRIPE_PUBLIC_KEY', 'YOUR_VALUE_GOES_HERE')
+os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
+* Back in the Developers section of your stripe account click on Webhooks
+* Create a webhook with the url of your website /checkout/wh/, for example:
+* Select the payment_intent.payment_failed and payment_intent.succeeded as events to send
+* Note the key created for this webhook
+* In your local environment(env.py) and Heroku, create environment variable STRIPE_WH_SECRET with the secret values os.environ.setdefault('STRIPE_WH_SECRET', 'YOUR_VALUE_GOES_HERE')
+* Test the webhook and note the success/fail attempts for troubleshooting, see events and logs for further testing.
+
+## MailChip 
+* Sign up or log in to your MailChimp account.
+* Get your API key from the MailChimp dashboard.
+* In the PP5 website admin panel, go to MailChimp settings.
+* Enter your API key and save.
+* Configure settings (audience, templates, triggers).
+* Embed the signup form on your website.
+* Test integration with a sample email.
 
 ## Tools
 - [Google Fonts:](https://fonts.google.com/) Was used to to incorporate font styles.  
@@ -322,11 +210,12 @@ Footer: A consistent website footer found at the bottom of every page, typically
 - [W3C Validator](https://validator.w3.org/): was used to validate HTML5 code for the website.
 - [W3C CSS validator](https://jigsaw.w3.org/css-validator/): was used to validate CSS code for the website.
 [Github Projects and Kanban board]() was used to track the progress of the project in general and of every application in the project.
-
 - [JSHint](https://jshint.com/): was used to validate Java Script code for the website.
 - [Lucid](https://lucid.app/): was used to create database schema diagram for the website.
-- [Figma](https://www.figma.com/):
-was used for create wireframes for deskop and mobile screen.
+- [Figma](https://www.figma.com/): was used for create wireframes for deskop and mobile screen.
+
+
+
 
 ## Testing
 
@@ -342,6 +231,36 @@ Testing has been carried out on the  following browsers:
 - Safari iOS
 
 #### Code validation
+
+## Deployment
+
+* This project was developed using a GitPod workspace. The code was committed to Git and pushed to GitHub using the terminal.
+
+* Log in to [Heroku](https://id.heroku.com/login) or create an account
+* On the main page click New and Create New App
+* Note: new app name must be unique
+* Next select your region, I chose Europe.
+* Click Create App button
+* Click in resources and select Heroku Postgres database
+* Click Reveal Config Vars and add new config "SECRET_KEY"
+* Click Reveal Config Vars and add new config "DISABLE_COLLECTSTATIC = 1"
+* The next page is the project’s Deploy Tab. Click on the Settings Tab and scroll down to Config Vars
+* Next, go to Buildpack section click Add Buildpack select python and Save Changes
+* Scroll to the top of the page and choose the Deploy tab
+* Select Github as the deployment method
+* Confirm you want to connect to GitHub
+* Search for the repository name and click the connect button
+* Scroll to the bottom of the deploy page and select the preferred deployment type
+* Click either Enable Automatic Deploys for automatic deployment when you push updates to Github
+* As Heroku Student Pack no longer includes free access to the Postgres add-on I had to migrate Postgres databases from Heroku to keep ElephantSQL.
+* Navigate to ElephantSQL.com and click “Get a managed database today”
+* Select “Try now for FREE” in the TINY TURTLE database plan
+* Select “Log in with GitHub” and authorize ElephantSQL with your selected GitHub account
+* In the Create new team form
+
+
+
+
 
 
 
