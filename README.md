@@ -140,10 +140,9 @@ Mailchimp is used to gain new customers and retain existing. Mailchimp enables t
 - django-storages          
 - gunicorn 
 - psycopg2  
-
 ### Cloud Hosting
 
-* [Amazon Web Services](https://signin.aws.amazon.com/): AWS is a comprehensive cloud computing platform that offers a wide range of services, including computing power, storage, and databases. 
+[Amazon Web Services](https://signin.aws.amazon.com/): AWS is a comprehensive cloud computing platform that offers a wide range of services, including computing power, storage, and databases. 
 
 * Create an account at aws.amazon.com
 * Open the S3 application and create an S3 bucket named "ci-pp5
@@ -166,11 +165,14 @@ Mailchimp is used to gain new customers and retain existing. Mailchimp enables t
 * Note the following AWS code in Settings.py. An environment variable called USE_AWS must be set to use these settings, otherwise it will use local storage.
 
 ### Database
-[PostgreSQL](https://www.postgresql.org/): The database used to store All of the data.
+#### [PostgreSQL](https://www.postgresql.org/) : 
+* The database used to store All of the data.
 
-### [Django](https://www.djangoproject.com/): python framework used to create all the backend.
+### [Django](https://www.djangoproject.com/) : 
+* Python framework used to create all the backend.
 
-## [stripe](https://stripe.com): Payment managment.    
+### [Stripe](https://stripe.com) :  
+Webbsite to manage payments for online busnisses  
 
 * Register for an account at stripe.com
 * Go to Developers section once logged in
@@ -234,7 +236,7 @@ Testing has been carried out on the  following browsers:
 
 ## Deployment
 
-* This project was developed using a GitPod workspace. The code was committed to Git and pushed to GitHub using the terminal.
+This project was developed using a GitPod workspace. The code was committed to Git and pushed to GitHub using the terminal.
 
 * Log in to [Heroku](https://id.heroku.com/login) or create an account
 * On the main page click New and Create New App
