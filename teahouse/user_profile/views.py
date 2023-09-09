@@ -8,7 +8,7 @@ from .forms import UserProfileForm
 
 
 @login_required
-def user_profile(request):
+def profile(request):
     profile = get_object_or_404(UserProfile, user=request.user)
 
     if request.method == 'POST':
