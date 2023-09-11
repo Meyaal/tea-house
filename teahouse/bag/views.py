@@ -8,8 +8,37 @@ from products.models import Product
 
 def view_bag(request):
     """ A view that renders the bag contents page """
+    bag = request.session.get('bag', {})
+    print(bag)
 
-    return render(request, 'bag/bag.html')
+    bag_items = []
+    total = 0
+    for item_id, item_data in bag.items():
+        product = get_object_or_404(Product, pk=item_id)
+        if isinstance(item_data, dict):  # this means we are dealing with sizes
+            for size, quantity in item_data['items_by_size'].items():
+                total += quantity * product.price
+                bag_items.append({
+                    'item_id': item_id,
+                    'product': product,
+                    'size': size,
+                    'quantity': quantity,
+                })
+        else:  # this means no size is associated
+            total += item_data * product.price
+            bag_items.append({
+                'item_id': item_id,
+                'product': product,
+                'quantity': item_data,
+            })
+
+    context = {
+        'bag_items': bag_items,
+        'total': total,
+    }
+
+    return render(request, 'bag/bag.html', context)
+
 
 
 def add_to_bag(request, item_id):
@@ -18,12 +47,15 @@ def add_to_bag(request, item_id):
     print("item id is: " + item_id)
 
     product = get_object_or_404(Product, pk=item_id)
+    print(product)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
+    print(redirect_url)
     size = None
     if 'product_size' in request.POST:
         size = request.POST['product_size']
     bag = request.session.get('bag', {})
+    print(bag)
 
     if size:
         if item_id in list(bag.keys()):
