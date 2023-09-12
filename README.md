@@ -273,8 +273,6 @@ This project was developed using a GitPod workspace. The code was committed to G
 
 
 
-
-
 ## Credits
 
 * Code Institute - [Boutique Ado](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+EA101+2021_T1/courseware/eb05f06e62c64ac89823cc956fcd8191/3adff2bf4a78469db72c5330b1afa836/) -  Walkthrough
@@ -282,13 +280,16 @@ This project was developed using a GitPod workspace. The code was committed to G
 * Code Institute - [I think therefore I blog](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/
 ) - Django blog project Walkthrough
 * [TheHouse-Free Bootstrap 5 HTML5 Landing Page Template](https://themewagon.com/themes/teahouse/) was the Boostrap theme used in the project.
-
-* [Django Dokumnetation](https://www.djangoproject.com/) was used to provide examples of code solutions and Django functionality.
-
 * [martin-mcinerney Github
 ](https://github.com/736B796E6574/CI-PP5/blob/main/README.md?plain=1) Martins readme was wellstruckted and clear to read. I followed his readme to to create my own.
 
-* [Unsplash](https://unsplash.com/) for images
+* [Unsplash](https://unsplash.com/) for images.
+
+Content
+
+* The texts that are used for testimonials comes from[Tripadvisor](https://www.tripadvisor.se/).
+* The texts that are used for the about section and products [Bodystore](https://www.bodystore.com/).
+
 
 
 
