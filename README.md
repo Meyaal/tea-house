@@ -127,6 +127,28 @@ This website features a striking black and green color scheme that combines soph
 
 ## Features
 
+
+## Web Marketing / Marketing Strategies
+### SEO
+Google keyword research was used to optimise web pages and content to increase ranking in search engines. Both short-tail & Long-tail keywords are used. The “People also ask” and “Related searches” was also used to identify keywords used.
+![]()
+
+### Content Marketing
+A blog post was created so that the website can create and distribute content material to attract and convert audience into first time customers and repeat customers. The main aim of the blog posts is to build trust and loyalty.
+
+### Social Media Marketing
+A Facebook business page was set up with the aim of generating growth organically by building a community and encouraging loyalty amongst our target market. The advantage of this is its free and quick to set up and Facebook has a large audience and demographic. The site can connect with customers directly via the Facebook platform and wider global audience. The main aim of the Facebook page is to build and maintain relationship with target audience. Content created can be spread across different social media platforms.
+![Facebook page](docs/Skärmavbild%202023-09-10%20kl.%2019.24.12.png)
+
+![Profile image](docs/Skärmavbild%202023-09-10%20kl.%2019.20.28.png)
+
+![Link to the deployed site provided](docs/Skärmavbild%202023-09-10%20kl.%2019.23.46.png)
+
+
+### Email Marketing
+Mailchimp is used to gain new customers and retain existing. Mailchimp enables the business to run and analyse the success of newsletter marketing campaigns. Users who register to receive the newsletter are automatically added to weekly newsletter. This strategy was chosen because its free to set up with the current level of business and can scale quickly as the business grows therefore increase conversions and generate more revenue for the business. The users who sign up have already visited the website and are more likely to become customers and therefore low cost to generate sales.
+
+
 ## Technologies Used
 
 - HTML5
