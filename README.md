@@ -20,8 +20,8 @@
 
 ## UX - User Experience
 
-See the GitHub Projects section was used as a [Kanban board]() for the development of this project, which made it possible to break down the project execution into subtasks and make it easier to complete and track project progress.
-[User stories]() were used to break down the project into sub-tasks and placed on the Kanban board to work on them and track progress.
+See the GitHub Projects section was used as a [Kanban board](https://github.com/users/Meyaal/projects/16) for the development of this project, which made it possible to break down the project execution into subtasks and make it easier to complete and track project progress.
+[User stories](https://github.com/Meyaal/tea-house/issues) were used to break down the project into sub-tasks and placed on the Kanban board to work on them and track progress.
 
 ### User Stories
 
@@ -86,12 +86,12 @@ UX, or User Experience, refers to the overall experience a user has while intera
 * To provide users with a targeted product selection and smooth customer experience when shopping with Exclusive Whitnening.
 
 ### Strategy
-* Exclusive Whitnening is focused on selling B2C products to end users. Habits of the consumers have changed recently and many more consumers than ever before have turned to home whitening versus in office whitening procedures. This is where Exclusive Whitnening aims to benefit consumers by offering large discounts on the whitening paraphernalia.
+* TEA House is focused on selling tea products to end users. Habits of the consumers have changed recently and many more consumers prefer to do online shopping. 
 
-### Site User / Target Audience / Demographic
+### Site User
 * Target market is aimed at anyone old enough to use the products.
-* People who may have stained teeth. eg Smokers, Coffee Drinkers
-* People who are interested in dental articles.
+* People who may likes tea and intrested in its healt benifits.
+* The webshop is aimed at consumers who are looking for gifts with health benefits and at the same time ecological.
 
 ### Site Goals
 * The site's main purpose is immediately clear
