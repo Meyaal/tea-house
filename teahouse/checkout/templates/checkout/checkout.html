@@ -29,7 +29,7 @@
                         <p class="mb-1 mt-0 small text-muted">Subtotal</p>
                     </div>
                 </div>
-                {% for item in bag_items %}
+                {% for item in bag_content.bag_items %}
                     <div class="row">
                         <div class="col-2 mb-1">
                             <a href="{% url 'product_detail' item.product.id %}">
@@ -58,9 +58,9 @@
                         <p class="my-0">Grand Total:</p>
                     </div>
                     <div class="col-3">
-                        <p class="my-0">${{ total | floatformat:2 }}</p>
-                        <p class="my-0">${{ delivery | floatformat:2 }}</p>
-                        <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
+                        <p class="my-0">${{ bag_content.total | floatformat:2 }}</p>
+                        <p class="my-0">${{ bag_content.delivery | floatformat:2 }}</p>
+                        <p class="my-0"><strong>${{ bag_content.grand_total | floatformat:2 }}</strong></p>
                     </div>
                 </div>
             </div>

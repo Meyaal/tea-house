@@ -279,86 +279,70 @@
             <h1 class="display-6">Want to stay healthy? Choose tea taste</h1>
         </div>
         <div class="row g-4">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="store-item position-relative text-center">
-                    <img class="img-fluid" src="{% static 'img/store-product-1.jpg' %}" alt="">
-                    <div class="p-4">
-                        <div class="text-center mb-3">
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
+            {% for product in products %}
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card h-100 border-0">
+                                {% if product.image %}
+                                <a href="{% url 'product_detail' product.id %}">
+                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                </a>
+                                {% else %}
+                                <a href="{% url 'product_detail' product.id %}">
+                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                </a>
+                                {% endif %}
+                                <div class="card-body pb-0">
+                                    <p class="mb-0">{{ product.name }}</p>
+                                </div>
+                                <div class="card-footer bg-white pt-0 border-0 text-left">
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                                            {% if product.category %}
+                                            <p class="small mt-1 mb-0">
+                                                <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                                    <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                                </a>
+                                            </p>
+                                            {% endif %}
+                                            {% if product.rating %}
+                                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                                            {% else %}
+                                                <small class="text-muted">No Rating</small>
+                                            {% endif %}
+                                            {% if request.user.is_superuser %}
+                                                <small class="ml-3">
+                                                    <a href="{% url 'edit_product' product.id %}">Edit</a> | 
+                                                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                                </small>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="mb-3">Ginger Lemon</h4>
-                        <p>The spicy taste of dried ginger has a warming effect in the body, while the sour taste of lemon awakens the mind and gives a feeling of lightness. Our Ginger Lemon tea is a perfect energy booster that can be enjoyed anytime.</p>
-                        <h4 class="text-primary">$19.00</h4>
-                    </div>
-                    <div class="store-overlay">
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i
-                                class="fa fa-arrow-right ms-2"></i></a>
-                        <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Add to Cart <i
-                                class="fa fa-cart-plus ms-2"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="store-item position-relative text-center">
-                    <img class="img-fluid" src="{% static 'img/store-product-2.jpg' %}" alt="">
-
-                    <div class="p-4">
-                        <div class="text-center mb-3">
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                        </div>
-                        <h4 class="mb-3">Green tea</h4>
-                        <p>Green tea from TEA House is a natural, green tea with a well-balanced, good taste. A perfect tea any time of the day.</p>
-                        <h4 class="text-primary">$19.00</h4>
-                    </div>
-                    <div class="store-overlay">
-                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 m-2"> More
-                            Detail <i class="fa fa-arrow-right ms-2"></i>
-                        </a>
-                        <a href="#" class="btn btn-dark rounded-pill py-2 px-4 m-2">
-                            Add to Cart <i class="fa fa-cart-plus ms-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="store-item position-relative text-center">
-                    <img class="img-fluid" src="{% static 'img/store-product-3.jpg' %}" alt="">
-
-                    <div class="p-4">
-                        <div class="text-center mb-3">
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                        </div>
-                        <h4 class="mb-3">Organic Chaga Powder</h4>
-                        <p> is a dietary supplement, a natural product that contains powdered chaga chaga, a delicate and fiber-rich mushroom known, among other things, as the "Diamond of the Forest". Great as tea or in smoothies.</p>
-                        <h4 class="text-primary">$19.00</h4>
-                    </div>
-                    <div class="store-overlay">
-                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 m-2">
-                            More Detail <i class="fa fa-arrow-right ms-2"></i>
-                        </a>
-                        <a href="#" class="btn btn-dark rounded-pill py-2 px-4 m-2">
-                            Add to Cart <i class="fa fa-cart-plus ms-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
-                <a href="#" class="btn btn-primary rounded-pill py-3 px-5">
-                    View More Products
-                </a>
-            </div>
+                        {% if forloop.counter|divisibleby:1 %}
+                            <div class="col-12 d-sm-none mb-5">
+                                <hr>
+                            </div>
+                        {% endif %}                        
+                        {% if forloop.counter|divisibleby:2 %}
+                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                                <hr>
+                            </div>
+                        {% endif %}
+                        {% if forloop.counter|divisibleby:3 %}
+                            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                                <hr>
+                            </div>
+                        {% endif %}
+                        {% if forloop.counter|divisibleby:4 %}
+                            <div class="col-12 d-none d-xl-block mb-5">
+                                <hr>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+            
         </div>
     </div>
 </div>
@@ -438,15 +422,14 @@
                         <div class="btn-square mx-auto mb-3">
                             <i class="fa fa-phone fa-2x text-white"></i>
                         </div>
-                        <p class="mb-2">+012 345 67890</p>
-                        <p class="mb-0">+012 345 67890</p>
+                        <p class="mb-2">08- 540 18 42</p>
                     </div>
                     <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.5s">
                         <div class="btn-square mx-auto mb-3">
                             <i class="fa fa-map-marker-alt fa-2x text-white"></i>
                         </div>
-                        <p class="mb-2">123 Street</p>
-                        <p class="mb-0">New York, USA</p>
+                        <p class="mb-2">Odengatan 52, 113 51</p>
+                        <p class="mb-0">Stockhom, Sweden</p>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,7 @@
+{'bag_items': [{'item_id': '2', 'quantity': 1, 'product': <Product: Wick>}], 
+ 'total': Decimal('4.00'),
+ 'product_count': 1, 'delivery': Decimal('0.4000000000000000222044604925'), 
+ 'free_delivery_delta': Decimal('46.00'), 
+ 'free_delivery_threshold': 50, 
+ 'grand_total': Decimal('4.400000000000000022204460492')
+ }
