@@ -127,6 +127,85 @@ This website features a striking black and green color scheme that combines soph
 
 ## Features
 
+**Homepage**
+
+* The hero section of the website creates a captivating first impression, showcasing the restaurant to visitors. It includes important links such as the menu and reservation options, as well as a presentation video to further market the restaurant.
+
+![](docs/Skärmavbild%202023-09-18%20kl.%2011.22.08.png)
+
+
+*NAVBAR*
+
+* The navbar prominently displays all the available sections for the user to explore, ensuring effortless navigation throughout the site. It serves as a convenient and efficient tool for users to access different areas of the website with ease.
+
+* User can sign up to or login if they already have an account. The navbar contains options such as about, products and contact. 
+![](docs/Skärmavbild%202023-09-18%20kl.%2011.22.21.png)
+
+*About*
+
+* The about section of the website incorporates elements of the webbsite, It contains brief information about the history of tea and the benefits of drinking it.
+
+![](docs/Skärmavbild%202023-09-18%20kl.%2011.22.41.png)
+
+*SingUp/Login*
+
+* The account pages offer users the ability to create a new account for registration purposes and also provide a login option for existing users. These dedicated pages ensure a seamless user experience by allowing individuals to easily create their account and securely access their personal information. By offering this functionality, the website simplifies the registration and login process, enabling users to conveniently manage their reservations and access personalized features.
+
+![](docs/Skärmavbild%202023-09-18%20kl.%2011.24.07.png)
+
+
+*Products*
+
+Here the products are listed with price, name, review and some information.
+
+![](docs/Skärmavbild%202023-09-18%20kl.%2011.23.09.png)
+
+* When customers select a product, they can simply tap on it and select the quantity. They are given the choice to either continue shopping or go shopping bag.
+
+![](docs/Skärmavbild%202023-09-18%20kl.%2012.22.54.png)
+
+*Shopping bag*
+
+* In the shopping bag, customers can see a list of their products, they can remove items or increase the number by edit or remove.
+
+* They can choose to proceed to payment.
+
+![](docs/Skärmavbild%202023-09-18%20kl.%2012.26.21.png)
+
+*Checkout*
+
+* When customers proceed to payment, they have to fill out a form with information for the livers and then they can fill in their credit card information.
+
+![](docs/Skärmavbild%202023-09-18%20kl.%2012.30.46.png)
+
+
+
+*Featured article*
+
+* A breif history about tea.
+
+![](docs/Skärmavbild%202023-09-18%20kl.%2012.14.11.png)
+
+*Contact*
+
+* The contact section includes all the necessary information about the webbsite that the customer may need to know about.
+
+
+![](docs/Skärmavbild%202023-09-18%20kl.%2012.12.09.png)
+
+*Testimonials*
+
+* The testimonials section features feedback from previous customers, offering social proof to boost customer conversion on the webpage. These testimonials showcase the experiences and opinions of satisfied patrons, building trust and credibility for the restaurant. By highlighting positive reviews, this section effectively influences potential customers.
+
+![](docs/Skärmavbild%202023-09-18%20kl.%2012.10.51.png)
+
+*Footer*
+
+* * The footer section of the website conveniently houses essential information about the webbsite, ensuring easy access to relevant contact details and social media links. When customers click on the Facebook link, they end up on the Facebook business page for the website. There is an option to sign up for the newsletter
+
+![](docs/Skärmavbild%202023-09-18%20kl.%2012.16.58.png)
+
+
 
 ## Web Marketing / Marketing Strategies
 ### SEO
