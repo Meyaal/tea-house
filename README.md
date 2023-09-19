@@ -2,10 +2,6 @@
 
 #### TEA house is a full stack web application developed as a portfolio project for The Code Institute's Full Stack Software Development (eCommerce) Diploma program. 
 
-
-## Live Webbsite
-
-
 ## Introduction
  Welcome to TEA house Website, this is an e-Commerce Webstore that was designed and developed as an Portfolio Project for The Code Institute's Full Stack Software Development (eCommerce) Diploma programme.
 
@@ -16,6 +12,11 @@
  Please note that this project is for assessment purposes only and does not accept real credit or debit card payments. Any purchases or bookings made on the website will not be fulfilled.
 
  The project is for assessment purposes only and will not accept any genuine credit or debit card payments and any purchases or shoppin made will not be fullfilled. The TEA house Store is a full stack, E-commerce, web application offering affordable, full ctock home products and solutions to a growing and diverse target audience.
+
+ ![](docs/Skärmavbild%202023-09-18%20kl.%2012.56.41.png)
+
+
+## [Live Webbsite click here](https://teahouse-231d15547b7f.herokuapp.com/)
 
 
 ## UX - User Experience
@@ -127,34 +128,35 @@ This website features a striking black and green color scheme that combines soph
 
 ## Features
 
-**Homepage**
+### **Homepage**
 
 * The hero section of the website creates a captivating first impression, showcasing the restaurant to visitors. It includes important links such as the menu and reservation options, as well as a presentation video to further market the restaurant.
 
 ![](docs/Skärmavbild%202023-09-18%20kl.%2011.22.08.png)
 
 
-*NAVBAR*
+### *NAVBAR*
 
 * The navbar prominently displays all the available sections for the user to explore, ensuring effortless navigation throughout the site. It serves as a convenient and efficient tool for users to access different areas of the website with ease.
 
 * User can sign up to or login if they already have an account. The navbar contains options such as about, products and contact. 
+
 ![](docs/Skärmavbild%202023-09-18%20kl.%2011.22.21.png)
 
-*About*
+### *About*
 
 * The about section of the website incorporates elements of the webbsite, It contains brief information about the history of tea and the benefits of drinking it.
 
 ![](docs/Skärmavbild%202023-09-18%20kl.%2011.22.41.png)
 
-*SingUp/Login*
+### *SingUp/Login*
 
 * The account pages offer users the ability to create a new account for registration purposes and also provide a login option for existing users. These dedicated pages ensure a seamless user experience by allowing individuals to easily create their account and securely access their personal information. By offering this functionality, the website simplifies the registration and login process, enabling users to conveniently manage their reservations and access personalized features.
 
 ![](docs/Skärmavbild%202023-09-18%20kl.%2011.24.07.png)
 
 
-*Products*
+### *Products*
 
 Here the products are listed with price, name, review and some information.
 
@@ -164,7 +166,7 @@ Here the products are listed with price, name, review and some information.
 
 ![](docs/Skärmavbild%202023-09-18%20kl.%2012.22.54.png)
 
-*Shopping bag*
+### *Shopping bag*
 
 * In the shopping bag, customers can see a list of their products, they can remove items or increase the number by edit or remove.
 
@@ -172,7 +174,7 @@ Here the products are listed with price, name, review and some information.
 
 ![](docs/Skärmavbild%202023-09-18%20kl.%2012.26.21.png)
 
-*Checkout*
+### *Checkout*
 
 * When customers proceed to payment, they have to fill out a form with information for the livers and then they can fill in their credit card information.
 
@@ -186,22 +188,22 @@ Here the products are listed with price, name, review and some information.
 
 ![](docs/Skärmavbild%202023-09-18%20kl.%2012.14.11.png)
 
-*Contact*
+### *Contact*
 
 * The contact section includes all the necessary information about the webbsite that the customer may need to know about.
 
 
 ![](docs/Skärmavbild%202023-09-18%20kl.%2012.12.09.png)
 
-*Testimonials*
+### *Testimonials*
 
 * The testimonials section features feedback from previous customers, offering social proof to boost customer conversion on the webpage. These testimonials showcase the experiences and opinions of satisfied patrons, building trust and credibility for the restaurant. By highlighting positive reviews, this section effectively influences potential customers.
 
 ![](docs/Skärmavbild%202023-09-18%20kl.%2012.10.51.png)
 
-*Footer*
+### *Footer*
 
-* * The footer section of the website conveniently houses essential information about the webbsite, ensuring easy access to relevant contact details and social media links. When customers click on the Facebook link, they end up on the Facebook business page for the website. There is an option to sign up for the newsletter
+ * The footer section of the website conveniently houses essential information about the webbsite, ensuring easy access to relevant contact details and social media links. When customers click on the Facebook link, they end up on the Facebook business page for the website. There is an option to sign up for the newsletter
 
 ![](docs/Skärmavbild%202023-09-18%20kl.%2012.16.58.png)
 
