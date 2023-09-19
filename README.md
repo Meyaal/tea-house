@@ -11,12 +11,19 @@
 
  Please note that this project is for assessment purposes only and does not accept real credit or debit card payments. Any purchases or bookings made on the website will not be fulfilled.
 
- The project is for assessment purposes only and will not accept any genuine credit or debit card payments and any purchases or shoppin made will not be fullfilled. The TEA house Store is a full stack, E-commerce, web application offering affordable, full ctock home products and solutions to a growing and diverse target audience.
+ The project is for assessment purposes only and will not accept any genuine credit or debit card payments and any purchases or shoppin made will not be fullfilled. 
+
+ If testing interactively, feel free to use card details below. Further information can be viewed via Stripe documentation test page.
+
+4242424242424242 (Visa) Expiration date = Any future date (Example: 12/24) CVN = any 3 digits (Example: 132) Postcode = any 5 digits (Example: 12345)
+ 
+ 
+ ## Showcase
 
  ![](docs/Skärmavbild%202023-09-18%20kl.%2012.56.41.png)
 
 
-## [Live Webbsite click here](https://teahouse-231d15547b7f.herokuapp.com/)
+### [Live Webbsite click here](https://teahouse-231d15547b7f.herokuapp.com/)
 
 
 ## UX - User Experience
@@ -390,8 +397,10 @@ This project was developed using a GitPod workspace. The code was committed to G
 
 Content
 
-* The texts that are used for testimonials comes from[Tripadvisor](https://www.tripadvisor.se/).
-* The texts that are used for the about section and products [Bodystore](https://www.bodystore.com/).
+* The texts that are used for testimonials comes from[Tripadvisor](https://www.tripadvisor.se/)
+* The texts that are used for the about section and products [Bodystore](https://www.bodystore.com/)
+* The video in the webbsite comes from youtube
+[Youtube](https://www.youtube.com/watch?v=Kv1vQyrEOyA)
 
 
 
