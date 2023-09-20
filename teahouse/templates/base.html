@@ -53,7 +53,7 @@
     <div class="container-fluid bg-white sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
-                <!-- TODO: change link -->
+
                 <a href="{% url 'home' %}" class="navbar-brand">
                     <img class="img-fluid" src="{% static 'img/logo.png' %}" alt="Tea house logo">
                 </a>
@@ -81,12 +81,19 @@
                     </div>
                 </div>
             </nav>
+            
         </div>
+
+
     </div>
+
     <!-- Navbar End -->
 
 
     <main class="mt-5">
+        <div id="delivery-banner" class="alert alert-primary text-center p-1">
+            <h6 class="logo-font my-1">Free delivery on orders over 50 €{{ free_delivery_threshold }}!</h6>
+        </div>
         {% block content %}
 
         {% endblock %}
@@ -118,7 +125,7 @@
                     <h4 class="text-primary mb-4">Quick Links</h4>
                     <a class="btn btn-link" href="{% url 'about' %}">About Us</a>
                     <a class="btn btn-link" href="{% url 'contact' %}">Contact Us</a>
-                    <a class="btn btn-link" href="#">Privacy</a>
+                    <a class="btn btn-link" href="{% url 'privacy' %}">Privacy</a>
 
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -130,7 +137,7 @@
                     <p class="mb-1">Sunday</p>
                     <h6 class="text-light">Closed</h6>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-5">
                     <h4 class="text-primary mb-4">Newsletter</h4>
                     <div id="mc_embed_shell">
                         <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet"
@@ -140,7 +147,7 @@
                                 background: #fff;
                                 false;
                                 clear: left;
-                                font: 14px Helvetica, Arial, sans-serif;
+                                font: 12px Helvetica, Arial, sans-serif;
                                 width: 350px;
                             }
 
