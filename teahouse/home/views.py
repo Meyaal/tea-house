@@ -10,39 +10,42 @@ def home(request):
     products = Product.objects.all()[:6]
 
     context = {
-        'products': products,
+        "products": products,
     }
-    return render(request, 'index.html', context)
+    return render(request, "index.html", context)
 
 
 def about(request):
-    return render(request, 'about.html')
+    return render(request, "about.html")
 
 
 def products(request):
-    return render(request, 'product.html')
+    return render(request, "product.html")
 
 
 def store(request):
-    return render(request, 'store.html') 
+    return render(request, "store.html")
 
 
 def feature(request):
-    return render(request, 'feature.html')
+    return render(request, "feature.html")
 
 
 def blog(request):
-    return render(request, 'blog.html')
+    return render(request, "blog.html")
 
 
 def testimonial(request):
-    return render(request, 'testimonial.html')
+    return render(request, "testimonial.html")
 
 
 def notFound(request):
-    return render(request, '404.html')
+    return render(request, "404.html")
 
 
 def contact(request):
-    return render(request, 'contact.html')
-   
+    return render(request, "contact.html")
+
+
+def privacy(request):
+    return render(request, "privacy.html")

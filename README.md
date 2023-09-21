@@ -165,7 +165,7 @@ This website features a striking black and green color scheme that combines soph
 
 ### *Products*
 
-Here the products are listed with price, name, review and some information.
+Here the products are listed with price, name, review and some information. Clicking the item image leads to the product detail page.
 
 ![](docs/Skärmavbild%202023-09-18%20kl.%2011.23.09.png)
 
@@ -337,9 +337,6 @@ os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
 - [Lucid](https://lucid.app/): was used to create database schema diagram for the website.
 - [Figma](https://www.figma.com/): was used for create wireframes for deskop and mobile screen.
 
-
-
-
 ## Testing
 
 #### Manual testing
@@ -353,33 +350,67 @@ Testing has been carried out on the  following browsers:
 - Microsoft Edge
 - Safari iOS
 
+## Different divices
+
+### I have tested with small screen, medium and large screen.
+
+- Ipad 
+- Iphone
+- Android 
+- Windows hp
+
+For Ipads and Iphones the bahaviour is same and works as expected.
+
+## Note
+
+#### Mailchip appearance looks diffrent on Windos than on macbook air screens. On macbook looks appearence as expected.
+
+
 #### Code validation
 
 ## Deployment
 
 This project was developed using a GitPod workspace. The code was committed to Git and pushed to GitHub using the terminal.
 
-* Log in to [Heroku](https://id.heroku.com/login) or create an account
-* On the main page click New and Create New App
-* Note: new app name must be unique
-* Next select your region, I chose Europe.
-* Click Create App button
-* Click in resources and select Heroku Postgres database
-* Click Reveal Config Vars and add new config "SECRET_KEY"
-* Click Reveal Config Vars and add new config "DISABLE_COLLECTSTATIC = 1"
-* The next page is the project’s Deploy Tab. Click on the Settings Tab and scroll down to Config Vars
-* Next, go to Buildpack section click Add Buildpack select python and Save Changes
-* Scroll to the top of the page and choose the Deploy tab
-* Select Github as the deployment method
-* Confirm you want to connect to GitHub
-* Search for the repository name and click the connect button
-* Scroll to the bottom of the deploy page and select the preferred deployment type
-* Click either Enable Automatic Deploys for automatic deployment when you push updates to Github
-* As Heroku Student Pack no longer includes free access to the Postgres add-on I had to migrate Postgres databases from Heroku to keep ElephantSQL.
-* Navigate to ElephantSQL.com and click “Get a managed database today”
-* Select “Try now for FREE” in the TINY TURTLE database plan
-* Select “Log in with GitHub” and authorize ElephantSQL with your selected GitHub account
-* In the Create new team form
+To deploy, follow these steps:
+
+1. Log in to Heroku or create an account if required. On the Welcome page in the top right corner click the button labeled 'New'.
+
+2. From the drop-down menu select 'Create new app'. Enter a preferred app name. Select the relevant geographical region. Click to 'Create App'.
+
+3. Navigate to 'Settings' and scroll down to the 'Config Vars' section. Click 'Reveal Config Vars' and enter 'PORT' for the key and '8000' for the value. Then click 'Add'. Add AWS_URL, DATABASE_URL and SECRET_KEY. URL variable values ​​must be copied from your AWS account and ElephantSQL account. To create a SECRET KEY, use the online service or come up with your own.
+
+4. Click on the 'Deploy' tab. Next to 'Deployment method' select 'GitHub'. Connect the relevant GitHub repository. Under 'Manual deploy' choose the correct branch and click 'Deploy Branch'. Also you can select 'Automatic Deploys' so that the site updates when updates are pushed to GitHub.
+
+5. After successful deployment message in the page top right corner click the button labeled 'Open app' and you can access live app.
+
+### Migrating databases
+* Create a database
+* Log in to ElephantSQL.com to access your dashboard
+* Click “Create New Instance”
+* Set up your plan
+* Select “Select Region” EXAMPLE "EU-West-1 (Ireland)"
+* Then click “Review”
+* Check your details are correct and then click “Create instance”
+* Return to the ElephantSQL dashboard and click on the database instance name for this project.
+
+### Forking the GitHub Repository
+
+To use this code and make changes without affecting the original code, it is possible to 'fork' the code on the GitHub repository through the following steps:
+
+1. Create or log into your GitHub account.
+2. Go to the GitHub repository.
+3. Click the 'Fork' button in the upper right-hand
+4. corner of the page. A copy of the repository will be available in your own repository.
+
+### Making a Local Clone
+1. Go to the project [Github repositry](https://8000-meyaal-teahouse-r9n8ty34ek6.ws-eu104.gitpod.io/)
+2. Click on the "Code" button.
+3. Choose one of the three options (HTTPS, SSH or GitHub CLI) and then click copy.
+4. Open the terminal in you IDE program.
+5. Type git clone and paste the URL that was copied in step 3.
+6. Press Enter and the local clone will be created.
+7. Make a copy of template.env to .env and then fill out the information.
 
 
 
@@ -394,6 +425,9 @@ This project was developed using a GitPod workspace. The code was committed to G
 ](https://github.com/736B796E6574/CI-PP5/blob/main/README.md?plain=1) Martins readme was wellstruckted and clear to read. I followed his readme to to create my own.
 
 * [Unsplash](https://unsplash.com/) for images.
+
+* [GDPR privacy](https://www.privacypolicygenerator) 
+Policy generated by privacypolicygenerator
 
 Content
 
