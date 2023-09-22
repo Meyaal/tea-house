@@ -5,19 +5,23 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('blog', '0001_initial'),
+        ("blog", "0001_initial"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='blogpost',
-            name='replys',
+            model_name="blogpost",
+            name="replys",
         ),
         migrations.AddField(
-            model_name='comment',
-            name='replys',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='blog.blogpost'),
+            model_name="comment",
+            name="replys",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                to="blog.blogpost",
+            ),
         ),
     ]
