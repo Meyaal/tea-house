@@ -1,5 +1,6 @@
 from django.db import models
 from user_profile.models import UserProfile
+from django.urls import reverse
 
 
 class BlogPost(models.Model):
@@ -9,6 +10,9 @@ class BlogPost(models.Model):
         UserProfile, on_delete=models.SET_NULL, null=True, blank=True
     )
     date = models.DateTimeField(auto_now_add=True)
+
+    def get_absolute_url(self):
+        return reverse("post_detail", args=[str(self.id)])
 
 
 # Create your models here.
