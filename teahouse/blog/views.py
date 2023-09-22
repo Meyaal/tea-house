@@ -12,7 +12,7 @@ def all_posts(request):
 
     context = {
         "posts": posts,
-        }
+    }
 
     return render(request, "blog/blog.html", context)
 
@@ -165,11 +165,8 @@ def post_detail(request, post_id):
     """A view to show individual post"""
 
     post = get_object_or_404(BlogPost, pk=post_id)
-    comments = Comment.objects.filter(post=post).order_by('-date')
+    comments = Comment.objects.filter(post=post).order_by("-date")
 
-    context = {
-        "post": post,
-        "comments": comments
-    }
+    context = {"post": post, "comments": comments}
 
     return render(request, "blog/blog_detail.html", context)

@@ -6,23 +6,24 @@ from .forms import ContactForm
 
 
 def contact(request):
-    """ A view to return the contact page """
-    if request.method == 'POST':
+    """A view to return the contact page"""
+    if request.method == "POST":
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
             messages.success(
-                request,
-                'Message sent. Thank you! We will get back to you soon.'
-                )
-            return redirect(reverse('home'))
+                request, "Message sent. Thank you! We will get back to you soon."
+            )
+            return redirect(reverse("home"))
         else:
             messages.error(
-                request, 'Oops! That did not send. \
-                    Check your details and try again.')
+                request,
+                "Oops! That did not send. \
+                    Check your details and try again.",
+            )
     else:
         form = ContactForm()
-        if 'submitted' in request.GET:
+        if "submitted" in request.GET:
             form = ContactForm()
 
-    return render(request, 'contact/contact.html', {'form': form})
+    return render(request, "contact/contact.html", {"form": form})
