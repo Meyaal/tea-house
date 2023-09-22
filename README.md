@@ -62,7 +62,6 @@ See the GitHub Projects section was used as a [Kanban board](https://github.com/
 - As a user I want a blog page so that I can view blog posts.
 - As a user I want a contact page so that I can send a message to the admin.
 - As a user I want a navigation bar so that I can nav the website.
-- As a user I want an FAQ's page so that I can find out more info.
 - As a user I have access to a privacy policy so that I can know my rights.
 - As a user I can view a social media page so that I can share the site.
 - As a user I have a landing page so that I can land at the site homepage.
@@ -151,7 +150,7 @@ This website features a striking black and green color scheme that combines soph
 
 ### **Homepage**
 
-* The hero section of the website creates a captivating first impression, showcasing the restaurant to visitors. It includes important links such as the menu and reservation options, as well as a presentation video to further market the restaurant.
+* The hero section of the website creates a captivating first impression. 
 
 ![](docs/Skärmavbild%202023-09-18%20kl.%2011.22.08.png)
 
@@ -351,9 +350,57 @@ os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
 - [Lucid](https://lucid.app/): was used to create database schema diagram for the website.
 - [Figma](https://www.figma.com/): was used for create wireframes for deskop and mobile screen.
 
-## Testing
+
+## Google Email
+* Create an email account at google.com, login, go to accounts settings in your gmail account and then click on Other Google Account Settings
+* Go to accounts and import then click on other account settings
+* Under signing into Google, turn on 2-step verification and follow the steps to enable
+* Once verified click on app passwords, select Other as the app and give the password a name, for example Django
+* Click create and a 16 digit password will be generated, copy this 16 digit password
+* In the env.py file, create an environment variable called EMAIL_HOST_PASS with the 16 digit password
+* In the env.py file, create an environment variable called EMAIL_HOST_USER with the email address of the gmail account
+* Set and confirm the following values in the settings.py file to successfully send emails
+* You will also need to set the variables EMAIL_HOST_PASS and EMAIL_HOST_USER in your production instance, for example Heroku
 
 #### Manual testing
+
+## Testing
+
+| Homepage  | Hero section |  directs user back to homepage |  Pass |
+
+| Navigation Links  | Selecting navigation links |  directs user to relevant pages |  Pass |
+
+| Products  | By clicking on products page |  directs user to show all products on the product   page |  Pass |
+
+| Sort By  | Selecting the filter Sort by for each category |  successfully alters the search By price and category options reflects results accordingly on page |  Pass |
+
+| Contact Us | Selecting Contact Us |  directs user to Contact Us page |  Pass |
+| Product | Selecting a product |  directs user to products list page |  Pass |
+| Blog | Selecting Blog |  directs user to Blog page |  Pass |
+| Blog Detail | Selecting Blog Detail |  directs user to Blog Detail page |  Pass |
+| Submitting Review Form | Editing details in review form on Products |  successfully edits message to admin and displays success message |  Pass |
+| Submitting Edit Review Form | Submitting  details in review form on Products |  successfully sends message to admin and displays success message |  Pass |
+| User Access | Logged in as user |  I can edit a review comment on products | Fail |
+| User Access | Logged in as user |  I can delete a review comment on products |  Fail |
+| Form Validation Required fields | Filling in form on /contact page | requires name, email and body and contact reason selected to send to Django admin  |  Pass |
+| Contact form submission | submit contact form | successfully sends data to Django admin as expected  |  Pass |
+| Register | Register for an account | selecting Register in my account directs user to /accounts/signup/ page |  Pass |
+| Login | Login to an account | selecting Login in my account directs user to /accounts/Login/ page |  Pass |
+| Search no results | No search | Entering a no results search returns error message and shows all products  |  Pass |
+| New User | Registering as a new user | Registering as a new user entering form validation works |  Pass |
+| Admin | Loggin in as Logging in as superuser / admin | Logging in as superuser / admin directs user to admin access, shows product management page |  Pass |
+| Login Message | log-in Success | "successfully signed in as (user name)" message shown to user|  Pass |
+| Add Product | Adding a new product | Adding a new product into the shopping bag page successfully adds product |  Pass |
+| Deleting Product | Deleting selected product | removed product from shopping pag |  Pass |
+| Deleting Message | Deleting product confirmation | Confirmation message of deletion is shown when successfully deleted |  No |
+| Deleting Message | Deleting product confirmation | Confirmation message of deletion is shown when successfully deleted |  No |
+| Defensive Programming | Test for SQL Injection attacks | Users not permitted to access create/update/delete products articles or reviews if they don't have access permission | Pass |
+| Logging out | message shown | Logging out as a user / admin prompts "are you sure" message |  Pass |
+| Successfully signed out | signed out message shown | "Are you sure you want to log out?" message shows to user when successfully signed out | Pass |
+| Logging out | Logging out and redirect | Logging out as a user / admin directs user to homepage |  Pass |
+| Footer | social media links | Clicking on the social media icons in the footer open the link in a new tab |  Pass |
+| Footer | Privacy Policy links | Clicking on the Privacy Policy link in the footer diverts user to the /privacy/ page |  Pass |
+
 
 #### Browsers Tested
 
@@ -381,6 +428,19 @@ For Ipads and Iphones the bahaviour is same and works as expected.
 
 
 #### Code validation
+
+## Further Testing
+-   The website was thoroughly tested on different browsers including Google Chrome, Internet Explorer, Safar and Microsoft Edge. Extensive testing was performed to make sure all the links and navigation work properly. Testing on different devices to make sure it scales properly using the below tools:  
+
+-   [W3C Markup Validator](https://validator.w3.org/nu/) 
+    - No errors or warnings that are relevant was shown 
+
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) 
+    - No errors or warnings that are relevant was shown 
+
+-   [Python Formatter](https://pypi.org/project/black/) 
+    - No errors or warnings that are relevant was shown 
+
 
 ## Deployment
 
@@ -449,6 +509,15 @@ Content
 * The texts that are used for the about section and products [Bodystore](https://www.bodystore.com/)
 * The video in the webbsite comes from youtube
 [Youtube](https://www.youtube.com/watch?v=Kv1vQyrEOyA)
+
+
+### Acknowledgements
+
+* The Code Institute Slack community.
+
+* The tutor support team at Code Institute for their support.
+
+* My Code Institute Mentor for feedback, inspiration and suggestions.
 
 
 
