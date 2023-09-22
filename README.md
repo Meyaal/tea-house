@@ -366,14 +366,12 @@ os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
 
 ## Testing
 
-| Homepage  | Hero section |  directs user back to homepage |  Pass |
-
-| Navigation Links  | Selecting navigation links |  directs user to relevant pages |  Pass |
-
-| Products  | By clicking on products page |  directs user to show all products on the product   page |  Pass |
-
+| Feature | Test  | Expected Result | Actual Result |
+| -------------| ----- | ----- | :----: |
+| Homepage  | Hero section |  directs user back to homepage |  Pass | 
+| Navigation Links  | Selecting navigation links |  directs user to relevant pages |  Pass | 
+| Products  | By clicking on products page | directs user to show all products on the productspage|  Pass | 
 | Sort By  | Selecting the filter Sort by for each category |  successfully alters the search By price and category options reflects results accordingly on page |  Pass |
-
 | Contact Us | Selecting Contact Us |  directs user to Contact Us page |  Pass |
 | Product | Selecting a product |  directs user to products list page |  Pass |
 | Blog | Selecting Blog |  directs user to Blog page |  Pass |
@@ -401,6 +399,15 @@ os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
 | Footer | social media links | Clicking on the social media icons in the footer open the link in a new tab |  Pass |
 | Footer | Privacy Policy links | Clicking on the Privacy Policy link in the footer diverts user to the /privacy/ page |  Pass |
 
+## Unfixed isseus
+
+* During testing I discovered that logged in users cannot leave comments in the blog
+
+* Users that are logged in cannot leave a review on products as expected. 
+
+### Note 
+* Due to time pressure and deadline, I have not been able to implement that.
+
 
 #### Browsers Tested
 
@@ -422,7 +429,7 @@ Testing has been carried out on the  following browsers:
 
 For Ipads and Iphones the bahaviour is same and works as expected.
 
-## Note
+### Note
 
 #### Mailchip appearance looks diffrent on Windos than on macbook air screens. On macbook looks appearence as expected.
 
