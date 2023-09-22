@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1 class="mb-4">Edit Comment</h1>
+        <form method="post" class="needs-validation" novalidate>
+            {% csrf_token %}
+            
+            <div class="mb-3">
+                <!-- Loop through form fields and style each one -->
+                {% for field in form %}
+                <label for="{{ field.id_for_label }}" class="form-label">{{ field.label }}</label>
+                {{ field }}
+                <div class="invalid-feedback">
+                    {{ field.errors|first }}
+                </div>
+                <div class="mb-3"></div>
+                {% endfor %}
+            </div>
+
+            <button type="submit" class="btn btn-primary">Update Comment</button>
+        </form>
+    </div>
+{% endblock %}
+

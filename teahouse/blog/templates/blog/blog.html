@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1 class="mb-4">All Blog Posts</h1>
+        
+        <div class="row">
+            {% for post in posts %}
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="{% url 'post_detail' post.id %}">{{ post.title }}</a>
+                        </h5>
+                        <p class="card-text">{{ post.content|truncatewords:50 }}</p>
+                        {% if post.user %} <!-- Check if post has a user associated -->
+                            <p><small class="text-muted">Posted by: {{ post.user.user.username }}</small></p>
+                        {% endif %}
+                        <p><small class="text-muted">Date: {{ post.date }}</small></p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+{% endblock %}
+

@@ -88,6 +88,19 @@ UX, or User Experience, refers to the overall experience a user has while intera
 * Feedback Incorporation: Allow user input to enhance the experience.
 * Performance Testing: Ensure smooth site operation during traffic spikes.
 
+## Wireframes
+
+* Deskop
+
+![](docs/Skärmavbild%202023-09-22%20kl.%2005.50.09.png)
+![](docs/Skärmavbild%202023-09-22%20kl.%2005.50.14.png)
+![](docs/Skärmavbild%202023-09-22%20kl.%2005.50.38.png)
+![](docs/Skärmavbild%202023-09-22%20kl.%2005.50.48.png)
+
+* Moblie
+
+![](docs/Skärmavbild%202023-09-22%20kl.%2005.57.12.png)
+
 ### Overall Goals
 * Create an e-commerce cloud-hosted Full-Stack web application to sell dental products online.
 * Allow superusers access to full CRUD (create, read, update and delete) functionality on reviews / articles and products respectively.
@@ -110,6 +123,7 @@ UX, or User Experience, refers to the overall experience a user has while intera
 ## Web Marketing / Marketing Strategies
 ### SEO
 Google keyword research was used to optimise web pages and content to increase ranking in search engines. Both short-tail & Long-tail keywords are used. The “People also ask” and “Related searches” was also used to identify keywords used.
+![](docs/Skärmavbild%202023-09-22%20kl.%2006.03.58.png)
 
 ### Content Marketing
 A blog post was created so that the website can create and distribute content material to attract and convert audience into first time customers and repeat customers. The main aim of the blog posts is to build trust and loyalty.
