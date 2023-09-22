@@ -33,6 +33,6 @@ def robots_txt(request):
     User-agent: *
     Disallow: /admin/
 
-    Sitemap: https://8000-meyaal-teahouse-r9n8ty34ek6.ws-eu104.gitpod.io/sitemap.xml
+    Sitemap: https://teahouse-231d15547b7f.herokuapp.com/sitemap.xml
     """
     return HttpResponse(content, content_type="text/plain")
