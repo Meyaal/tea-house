@@ -493,6 +493,14 @@ To use this code and make changes without affecting the original code, it is pos
 6. Press Enter and the local clone will be created.
 7. Make a copy of template.env to .env and then fill out the information.
 
+### sitemap.xml & robots_txt
+
+* The files are created for django to keep them dynamic and up to date. 
+[Sitemap](https://teahouse-231d15547b7f.herokuapp.com/sitemap.xml)
+
+* In view home a have my  robots_txt.
+
+
 
 
 ## Credits
