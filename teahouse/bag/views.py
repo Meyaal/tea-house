@@ -9,7 +9,6 @@ from products.models import Product
 def view_bag(request):
     """A view that renders the bag contents page"""
     bag = request.session.get("bag", {})
-    print(bag)
 
     bag_items = []
     total = 0
@@ -47,18 +46,16 @@ def view_bag(request):
 def add_to_bag(request, item_id):
     """Add a quantity of the specified product to the shopping bag"""
 
-    print("item id is: " + item_id)
-
     product = get_object_or_404(Product, pk=item_id)
-    print(product)
+
     quantity = int(request.POST.get("quantity"))
     redirect_url = request.POST.get("redirect_url")
-    print(redirect_url)
+
     size = None
     if "product_size" in request.POST:
         size = request.POST["product_size"]
     bag = request.session.get("bag", {})
-    print(bag)
+
 
     if size:
         if item_id in list(bag.keys()):

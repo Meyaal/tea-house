@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin/
+
+Sitemap: https://teahouse-231d15547b7f.herokuapp.com/sitemap.xml
