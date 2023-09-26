@@ -57,6 +57,8 @@ def checkout(request):
             "county": request.POST["county"],
         }
 
+        request.session["email-test"] = request.POST['email']
+
         order_form = OrderForm(form_data)
         if order_form.is_valid():
             order = order_form.save(commit=False)
@@ -155,7 +157,7 @@ def checkout(request):
         "client_secret": intent.client_secret,
         "bag_content": bag_contents(request),
     }
-    print(context)
+
     return render(request, template, context)
 
 
@@ -165,14 +167,8 @@ def checkout_success(request, order_number):
     """
     save_info = request.session.get("save_info")
     order = get_object_or_404(Order, order_number=order_number)
-    print("\nOrder: ")
-    print(order)
-    print("\n")
 
     if request.user.is_authenticated:
-        print("\nUser: ")
-        print(request.user)
-        print("\n")
         profile = UserProfile.objects.get(user=request.user)
         # Attach the user's profile to the order
         order.user_profile = profile
