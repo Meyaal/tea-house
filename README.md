@@ -407,7 +407,7 @@ os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
 | User Access | Logged in as user |  I can add a comment on a blogpost | Pass |
 | Form Validation Required fields | Filling in form on /contact page | requires name, email and body and contact reason selected to send to Django admin  |  Pass |
 | Contact form submission | submit contact form | successfully sends data to Django admin as expected  |  Pass |
-| Add product on the site | as a super user| I want a product edit form so that I can edit products on the site| Fail.
+| Add product on the site | as a super user| I want a product edit form so that I can edit products on the site| Fail |
 | Register | Register for an account | selecting Register in my account directs user to /accounts/signup/ page |  Pass |
 | Login | Login to an account | selecting Login in my account directs user to /accounts/Login/ page |  Pass |
 | Search no results | No search | Entering a no results search returns error message and shows all products  |  Pass |
@@ -415,10 +415,10 @@ os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
 | Admin | Loggin in as Logging in as superuser / admin | Logging in as superuser / admin directs user to admin access, shows product management page |  Pass |
 | Login Message | log-in Success | "successfully signed in as (user name)" message shown to user|  Pass |
 | Add Product | Adding a new product | Adding a new product into the shopping bag page successfully adds product |  Pass |
-| checkout| as logged in users |can click on check out and fill a form with datails and creditcard and click on compelete order| Pass
-| Email confirmation | as logged in users | Users should get an email sent to theirs email adress with order cofirmation | Fail
+| checkout| as logged in users |can click on check out and fill a form with datails and creditcard and click on compelete order| Pass |
+| Email confirmation | as logged in users | Users should get an email sent to theirs email adress with order cofirmation | Fail |
 | Deleting Product | Deleting selected product | removed product from shopping pag |  Pass |
-| Edit | Logged in users| Can edit quantity of products in shopping bag| Pass
+| Edit | Logged in users| Can edit quantity of products in shopping bag| Pass |
 | Deleting Message | Deleting product confirmation | Confirmation message of deletion is shown when successfully deleted | Fail |
 | Defensive Programming | Test for SQL Injection attacks | Users not permitted to access create/update/delete products articles or reviews if they don't have access permission | Pass |
 | Logging out | message shown | Logging out as a user / admin prompts "are you sure" message |  Pass |
