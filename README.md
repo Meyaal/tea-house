@@ -100,6 +100,10 @@ UX, or User Experience, refers to the overall experience a user has while intera
 
 ![](docs/Skärmavbild%202023-09-22%20kl.%2005.57.12.png)
 
+### Database 
+
+![](docs/Skärmavbild%202023-09-28%20kl.%2010.41.21.png)
+
 ### Overall Goals
 * Create an e-commerce cloud-hosted Full-Stack web application to sell dental products online.
 * Allow superusers access to full CRUD (create, read, update and delete) functionality on reviews / articles and products respectively.
@@ -169,11 +173,13 @@ This website features a striking black and green color scheme that combines soph
 
 ![](docs/Skärmavbild%202023-09-18%20kl.%2011.22.41.png)
 
-### *SingUp/Login*
+### *SingUp/Login/Logout*
 
 * The account pages offer users the ability to create a new account for registration purposes and also provide a login option for existing users. These dedicated pages ensure a seamless user experience by allowing individuals to easily create their account and securely access their personal information. By offering this functionality, the website simplifies the registration and login process, enabling users to conveniently manage their reservations and access personalized features.
 
 ![](docs/Skärmavbild%202023-09-18%20kl.%2011.24.07.png)
+![](docs/Skärmavbild%202023-09-28%20kl.%2010.43.20.png)
+![](docs/Skärmavbild%202023-09-28%20kl.%2010.47.32.png)
 
 
 ### *Products*
@@ -200,6 +206,8 @@ Here the products are listed with price, name, review and some information. Clic
 
 ![](docs/Skärmavbild%202023-09-18%20kl.%2012.30.46.png)
 
+![](docs/Skärmavbild%202023-09-28%20kl.%2009.58.57.png)
+
 
 
 *Featured article*
@@ -214,6 +222,25 @@ Here the products are listed with price, name, review and some information. Clic
 
 
 ![](docs/Skärmavbild%202023-09-18%20kl.%2012.12.09.png)
+![](docs/Skärmavbild%202023-09-28%20kl.%2010.30.17.png)
+
+* A Form was created so that logged in users can keep in touch with admin. 
+
+![](docs/Skärmavbild%202023-09-28%20kl.%2010.32.59.png)
+
+* The admin can see the contact form as shown below. When the users send the contact form they will be redirected to homepage. 
+
+![](docs/Skärmavbild%202023-09-28%20kl.%2010.32.59.png)
+
+### Blog
+
+* As I superuser I can create a new blogpost, delete or uppdate. 
+
+![](docs/Skärmavbild%202023-09-28%20kl.%2009.46.32.png)
+
+* Logged in users are able to add comments on blogpost. 
+![](docs/Skärmavbild%202023-09-28%20kl.%2009.46.44.png)
+
 
 ### *Testimonials*
 
@@ -223,9 +250,10 @@ Here the products are listed with price, name, review and some information. Clic
 
 ### *Footer*
 
- * The footer section of the website conveniently houses essential information about the webbsite, ensuring easy access to relevant contact details and social media links. When customers click on the Facebook link, they end up on the Facebook business page for the website. There is an option to sign up for the newsletter
+ * The footer section of the website conveniently houses essential information about the webbsite, ensuring easy access to relevant contact details and social media links. When customers click on the Facebook link, they end up on the Facebook business page for the website. There is an option to sign up for the newsletter.
 
-![](docs/Skärmavbild%202023-09-18%20kl.%2012.16.58.png)
+![](docs/Skärmavbild%202023-09-28%20kl.%2010.19.41.png)
+![](docs/Skärmavbild%202023-09-28%20kl.%2010.18.17.png)
 
 
 
@@ -331,6 +359,17 @@ os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
 * Embed the signup form on your website.
 * Test integration with a sample email.
 
+## Google Email
+* Create an email account at google.com, login, go to accounts settings in your gmail account and then click on Other Google Account Settings
+* Go to accounts and import then click on other account settings
+* Under signing into Google, turn on 2-step verification and follow the steps to enable
+* Once verified click on app passwords, select Other as the app and give the password a name, for example Django
+* Click create and a 16 digit password will be generated, copy this 16 digit password
+* In the env.py file, create an environment variable called EMAIL_HOST_PASS with the 16 digit password
+* In the env.py file, create an environment variable called EMAIL_HOST_USER with the email address of the gmail account
+* Set and confirm the following values in the settings.py file to successfully send emails
+* You will also need to set the variables EMAIL_HOST_PASS and EMAIL_HOST_USER in your production instance, for example Heroku
+
 ## Tools
 - [Google Fonts:](https://fonts.google.com/) Was used to to incorporate font styles.  
 - [Font Awesome](https://fontawesome.com/): was used to create the icons used on the website.
@@ -351,17 +390,6 @@ os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
 - [Figma](https://www.figma.com/): was used for create wireframes for deskop and mobile screen.
 
 
-## Google Email
-* Create an email account at google.com, login, go to accounts settings in your gmail account and then click on Other Google Account Settings
-* Go to accounts and import then click on other account settings
-* Under signing into Google, turn on 2-step verification and follow the steps to enable
-* Once verified click on app passwords, select Other as the app and give the password a name, for example Django
-* Click create and a 16 digit password will be generated, copy this 16 digit password
-* In the env.py file, create an environment variable called EMAIL_HOST_PASS with the 16 digit password
-* In the env.py file, create an environment variable called EMAIL_HOST_USER with the email address of the gmail account
-* Set and confirm the following values in the settings.py file to successfully send emails
-* You will also need to set the variables EMAIL_HOST_PASS and EMAIL_HOST_USER in your production instance, for example Heroku
-
 #### Manual testing
 
 ## Testing
@@ -376,12 +404,10 @@ os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
 | Product | Selecting a product |  directs user to products list page |  Pass |
 | Blog | Selecting Blog |  directs user to Blog page |  Pass |
 | Blog Detail | Selecting Blog Detail |  directs user to Blog Detail page |  Pass |
-| Submitting Review Form | Editing details in review form on Products |  successfully edits message to admin and displays success message |  Pass |
-| Submitting Edit Review Form | Submitting  details in review form on Products |  successfully sends message to admin and displays success message |  Pass |
-| User Access | Logged in as user |  I can edit a review comment on products | Fail |
-| User Access | Logged in as user |  I can delete a review comment on products |  Fail |
+| User Access | Logged in as user |  I can add a comment on a blogpost | Pass |
 | Form Validation Required fields | Filling in form on /contact page | requires name, email and body and contact reason selected to send to Django admin  |  Pass |
 | Contact form submission | submit contact form | successfully sends data to Django admin as expected  |  Pass |
+| Add product on the site | as a super user| I want a product edit form so that I can edit products on the site| Fail.
 | Register | Register for an account | selecting Register in my account directs user to /accounts/signup/ page |  Pass |
 | Login | Login to an account | selecting Login in my account directs user to /accounts/Login/ page |  Pass |
 | Search no results | No search | Entering a no results search returns error message and shows all products  |  Pass |
@@ -389,9 +415,11 @@ os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
 | Admin | Loggin in as Logging in as superuser / admin | Logging in as superuser / admin directs user to admin access, shows product management page |  Pass |
 | Login Message | log-in Success | "successfully signed in as (user name)" message shown to user|  Pass |
 | Add Product | Adding a new product | Adding a new product into the shopping bag page successfully adds product |  Pass |
+| checkout| as logged in users |can click on check out and fill a form with datails and creditcard and click on compelete order| Pass
+| Email confirmation | as logged in users | Users should get an email sent to theirs email adress with order cofirmation | Fail
 | Deleting Product | Deleting selected product | removed product from shopping pag |  Pass |
-| Deleting Message | Deleting product confirmation | Confirmation message of deletion is shown when successfully deleted |  No |
-| Deleting Message | Deleting product confirmation | Confirmation message of deletion is shown when successfully deleted |  No |
+| Edit | Logged in users| Can edit quantity of products in shopping bag| Pass
+| Deleting Message | Deleting product confirmation | Confirmation message of deletion is shown when successfully deleted | Fail |
 | Defensive Programming | Test for SQL Injection attacks | Users not permitted to access create/update/delete products articles or reviews if they don't have access permission | Pass |
 | Logging out | message shown | Logging out as a user / admin prompts "are you sure" message |  Pass |
 | Successfully signed out | signed out message shown | "Are you sure you want to log out?" message shows to user when successfully signed out | Pass |
@@ -401,9 +429,17 @@ os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
 
 ## Unfixed isseus
 
-* During testing I discovered that logged in users cannot leave comments in the blog
+* During testing I discovered that neither superuser or users doesn't get an email with order confiramtion i thers mailbox.
 
-* Users that are logged in cannot leave a review on products as expected. 
+* Users that are logged in cannot leave, edit och delete a review on products as expected. 
+
+* As an admin I want a product edit form so that I can edit products on the site, that was not fixed. 
+
+* Orderform does not looks well and needs to be fixed. 
+![](docs/Skärmavbild%202023-09-18%20kl.%2012.30.46.png)
+
+* Whens users logged in successfully they does not get at message. 
+
 
 ### Note 
 * Due to time pressure and deadline, I have not been able to implement that.
@@ -495,10 +531,24 @@ To use this code and make changes without affecting the original code, it is pos
 
 ### sitemap.xml & robots_txt
 
-* The files are created for django to keep them dynamic and up to date. 
+
+This version provides a concise overview of the steps involved in implementing a sitemap.xml file in a Django application. 
+
+
+* Generate a sitemap.xml file to help search engines discover and index your site's pages.
+* Create a view in views.py to serve the sitemap.xml file.
+* Configure the URL pattern to link to the view.
+Ensure Django settings specify the directory where the sitemap.xml file is located."
+This version provides a concise overview of the steps involved in implementing a sitemap.xml file in a Django application. 
+
 [Sitemap](https://teahouse-231d15547b7f.herokuapp.com/sitemap.xml)
 
-* In view home a have my  robots_txt.
+robots.txt in a Django app
+
+* Create a robots.txt file with instructions for web crawlers.
+* Add a view in views.py to serve the robots.txt file.
+* Configure the URL pattern to point to the view.
+Ensure that Django settings point to the directory where the robots.txt file is located."
 
 
 
