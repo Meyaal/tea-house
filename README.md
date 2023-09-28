@@ -438,7 +438,7 @@ os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
 * Orderform does not looks well and needs to be fixed. 
 ![](docs/Skärmavbild%202023-09-18%20kl.%2012.30.46.png)
 
-* Whens users logged in successfully they does not get at message. 
+* Whens users logged in successfully they do not get at message. 
 
 
 ### Note 
