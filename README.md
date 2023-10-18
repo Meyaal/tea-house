@@ -416,7 +416,7 @@ os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
 | Login Message | log-in Success | "successfully signed in as (user name)" message shown to user|  Pass |
 | Add Product | Adding a new product | Adding a new product into the shopping bag page successfully adds product |  Pass |
 | checkout| as logged in users |can click on check out and fill a form with datails and creditcard and click on compelete order| Pass |
-| Email confirmation | as logged in users | Users should get an email sent to theirs email adress with order cofirmation | Fail |
+| Email confirmation | as logged in users | Users should get an email sent to theirs email adress with order cofirmation | Pass |
 | Deleting Product | Deleting selected product | removed product from shopping pag |  Pass |
 | Edit | Logged in users| Can edit quantity of products in shopping bag| Pass |
 | Deleting Message | Deleting product confirmation | Confirmation message of deletion is shown when successfully deleted | Fail |
