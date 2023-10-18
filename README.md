@@ -413,10 +413,10 @@ os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
 | Search no results | No search | Entering a no results search returns error message and shows all products  |  Pass |
 | New User | Registering as a new user | Registering as a new user entering form validation works |  Pass |
 | Admin | Loggin in as Logging in as superuser / admin | Logging in as superuser / admin directs user to admin access, shows product management page |  Pass |
-| Login Message | log-in Success | "successfully signed in as (user name)" message shown to user|  Pass |
+| Login Message | log-in Success | "successfully signed in as (user name)" message shown to user|  Pass|
 | Add Product | Adding a new product | Adding a new product into the shopping bag page successfully adds product |  Pass |
 | checkout| as logged in users |can click on check out and fill a form with datails and creditcard and click on compelete order| Pass |
-| Email confirmation | as logged in users | Users should get an email sent to theirs email adress with order cofirmation | Fail |
+| Email confirmation | as logged in users | Users should get an email sent to theirs email adress with order cofirmation | Pass |
 | Deleting Product | Deleting selected product | removed product from shopping pag |  Pass |
 | Edit | Logged in users| Can edit quantity of products in shopping bag| Pass |
 | Deleting Message | Deleting product confirmation | Confirmation message of deletion is shown when successfully deleted | Fail |
@@ -428,8 +428,6 @@ os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
 | Footer | Privacy Policy links | Clicking on the Privacy Policy link in the footer diverts user to the /privacy/ page |  Pass |
 
 ## Unfixed isseus
-
-* During testing I discovered that neither superuser or users doesn't get an email with order confiramtion i thers mailbox.
 
 * Users that are logged in cannot leave, edit och delete a review on products as expected. 
 
