@@ -413,7 +413,7 @@ os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
 | Search no results | No search | Entering a no results search returns error message and shows all products  |  Pass |
 | New User | Registering as a new user | Registering as a new user entering form validation works |  Pass |
 | Admin | Loggin in as Logging in as superuser / admin | Logging in as superuser / admin directs user to admin access, shows product management page |  Pass |
-| Login Message | log-in Success | "successfully signed in as (user name)" message shown to user|  Pass |
+| Login Message | log-in Success | "successfully signed in as (user name)" message shown to user|  Pass|
 | Add Product | Adding a new product | Adding a new product into the shopping bag page successfully adds product |  Pass |
 | checkout| as logged in users |can click on check out and fill a form with datails and creditcard and click on compelete order| Pass |
 | Email confirmation | as logged in users | Users should get an email sent to theirs email adress with order cofirmation | Pass |
