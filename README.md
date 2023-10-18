@@ -429,8 +429,6 @@ os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
 
 ## Unfixed isseus
 
-* During testing I discovered that neither superuser or users doesn't get an email with order confiramtion i thers mailbox.
-
 * Users that are logged in cannot leave, edit och delete a review on products as expected. 
 
 * As an admin I want a product edit form so that I can edit products on the site, that was not fixed. 
