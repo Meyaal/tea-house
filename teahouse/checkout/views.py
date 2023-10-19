@@ -196,12 +196,15 @@ def checkout_success(request, order_number):
         email will be sent to {order.email}.",
     )
 
+    bag = bag_contents(request)
+
     if "bag" in request.session:
         del request.session["bag"]
 
     template = "checkout/checkout_success.html"
     context = {
         "order": order,
+        "bag_contents": bag
     }
 
     return render(request, template, context)

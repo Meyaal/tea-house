@@ -2,6 +2,9 @@ from django.shortcuts import render, redirect, reverse, HttpResponse, get_object
 from django.contrib import messages
 
 from products.models import Product
+from django.conf import settings
+from decimal import Decimal
+
 
 # Create your views here.
 
@@ -34,10 +37,22 @@ def view_bag(request):
                     "quantity": item_data,
                 }
             )
+    
+    if total < settings.FREE_DELIVERY_THRESHOLD:
+        delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
+        free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total
+    else:
+        delivery = 0
+        free_delivery_delta = 0
+
+    grand_total = delivery + total
 
     context = {
         "bag_items": bag_items,
+        "grand_total": grand_total,
         "total": total,
+        "delivery": delivery,
+        "free_delivery_delta": free_delivery_delta
     }
 
     return render(request, "bag/bag.html", context)
