@@ -21,17 +21,23 @@ class StripeWH_Handler:
         """Send the user a confirmation email"""
         cust_email = order.email
 
-        total = grand_total / (1 + (settings.STANDARD_DELIVERY_PERCENTAGE/100))
-        delivery = total * (settings.STANDARD_DELIVERY_PERCENTAGE/100)
+        total = grand_total / (1 + (settings.STANDARD_DELIVERY_PERCENTAGE / 100))
+        delivery = total * (settings.STANDARD_DELIVERY_PERCENTAGE / 100)
         print(f"\ngrand total: {grand_total}\ntotal: {total}\ndelivery: {delivery}\n")
-        
+
         subject = render_to_string(
             "checkout/confirmation_emails/confirmation_email_subject.txt",
             {"order": order},
         )
         body = render_to_string(
             "checkout/confirmation_emails/confirmation_email_body.txt",
-            {"order": order, "contact_email": settings.DEFAULT_FROM_EMAIL, "total": total, "delivery": delivery, "grand_total": grand_total},
+            {
+                "order": order,
+                "contact_email": settings.DEFAULT_FROM_EMAIL,
+                "total": total,
+                "delivery": delivery,
+                "grand_total": grand_total,
+            },
         )
 
         send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, [cust_email])

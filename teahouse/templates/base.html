@@ -35,6 +35,20 @@
     <!-- Template Stylesheet -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
 
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet"
+                            type="text/css">
+    <style>
+        #mc_embed_signup {
+            background: #fff;
+            clear: left;
+            font: 14px Helvetica, Arial, sans-serif;
+            width: 350px;
+        }
+
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+
     {% block extra_css %}
     {% endblock %}
 </head>
@@ -139,20 +153,6 @@
                 <div class="col-lg-3 col-md-5">
                     <h4 class="text-primary mb-4">Newsletter</h4>
                     <div id="mc_embed_shell">
-                        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet"
-                            type="text/css">
-                        <style type="text/css">
-                            #mc_embed_signup {
-                                background: #fff;
-                                false;
-                                clear: left;
-                                font: 14px Helvetica, Arial, sans-serif;
-                                width: 350px;
-                            }
-
-                            /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                             We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                        </style>
                         <div id="mc_embed_signup">
                             <form
                                 action="https://herokuapp.us12.list-manage.com/subscribe/post?u=08cbc5791094c35895f40a6c9&amp;id=3f5970d553&amp;f_id=0045bfe0f0"

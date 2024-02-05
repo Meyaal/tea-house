@@ -37,7 +37,7 @@ def view_bag(request):
                     "quantity": item_data,
                 }
             )
-    
+
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
         free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total
@@ -52,7 +52,7 @@ def view_bag(request):
         "grand_total": grand_total,
         "total": total,
         "delivery": delivery,
-        "free_delivery_delta": free_delivery_delta
+        "free_delivery_delta": free_delivery_delta,
     }
 
     return render(request, "bag/bag.html", context)
@@ -70,7 +70,6 @@ def add_to_bag(request, item_id):
     if "product_size" in request.POST:
         size = request.POST["product_size"]
     bag = request.session.get("bag", {})
-
 
     if size:
         if item_id in list(bag.keys()):

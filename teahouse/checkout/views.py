@@ -57,7 +57,7 @@ def checkout(request):
             "county": request.POST["county"],
         }
 
-        request.session["email-test"] = request.POST['email']
+        request.session["email-test"] = request.POST["email"]
 
         order_form = OrderForm(form_data)
         if order_form.is_valid():
@@ -202,9 +202,6 @@ def checkout_success(request, order_number):
         del request.session["bag"]
 
     template = "checkout/checkout_success.html"
-    context = {
-        "order": order,
-        "bag_contents": bag
-    }
+    context = {"order": order, "bag_contents": bag}
 
     return render(request, template, context)
