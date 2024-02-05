@@ -116,7 +116,9 @@ class StripeWH_Handler:
             self._send_confirmation_email(
                 order=order, grand_total=grand_total)
             return HttpResponse(
-                content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database',
+                content=f'''
+                Webhook received: {event["type"]} | SUCCESS: Verified order already in database
+                ''',
                 status=200,
             )
         else:
@@ -165,7 +167,9 @@ class StripeWH_Handler:
         self._send_confirmation_email(
             order=order, grand_total=grand_total)
         return HttpResponse(
-            content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
+            content=f'''
+            Webhook received: {event["type"]} | SUCCESS: Created order in webhook
+            ''',
             status=200,
         )
 
@@ -173,4 +177,6 @@ class StripeWH_Handler:
         """
         Handle the payment_intent.payment_failed webhook from Stripe
         """
-        return HttpResponse(content=f'Webhook received: {event["type"]}', status=200)
+        return HttpResponse(
+            content=f'Webhook received: {event["type"]}', status=200
+            )

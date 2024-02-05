@@ -61,7 +61,8 @@ def add_comment(request, post_id):
             return redirect(reverse("post_detail", args=[post.id]))
         else:
             messages.error(
-                request, "Failed to add comment. Please ensure the form is valid."
+                request,
+                "Failed to add comment. Please ensure the form is valid."
             )
     else:
         form = CommentForm()
@@ -122,7 +123,8 @@ def edit_post(request, post_id):
             return redirect(reverse("post_detail", args=[post.id]))
         else:
             messages.error(
-                request, "Failed to update post. Please ensure the form is valid."
+                request,
+                "Failed to update post. Please ensure the form is valid."
             )
     else:
         form = BlogPost(instance=post)
@@ -156,7 +158,8 @@ def edit_comment(request, comment_id):
             return redirect(reverse("post_detail", args=[post.id]))
         else:
             messages.error(
-                request, "Failed to update post. Please ensure the form is valid."
+                request,
+                "Failed to update post. Please ensure the form is valid."
             )
     else:
         form = CommentForm(instance=post)
@@ -181,4 +184,5 @@ def post_detail(request, post_id):
 
     context = {"post": post, "comments": comments}
 
-    return render(request, "blog/blog_detail.html", context)
+    return render
+    (request, "blog/blog_detail.html", context)

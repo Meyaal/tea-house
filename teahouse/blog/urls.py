@@ -16,12 +16,15 @@ urlpatterns = [
         "edit/<int:post_id>/", views.edit_post, name="edit_post"
     ),  # Edit a specific post
     path(
-        "edit_comment/<int:comment_id>/", views.edit_comment, name="edit_comment"
+        "edit_comment/<int:comment_id>/",
+        views.edit_comment, name="edit_comment"
     ),  # Edit a specific comment
     path(
-        "delete/<int:post_id>/", views.delete_post, name="delete_post"
+        "delete/<int:post_id>/",
+        views.delete_post, name="delete_post"
     ),  # Delete a specific post
     path(
-        "delete_comment/<int:comment_id>/", views.delete_comment, name="delete_comment"
+        "delete_comment/<int:comment_id>/",
+        views.delete_comment, name="delete_comment"
     ),  # Delete a specific comment
 ]

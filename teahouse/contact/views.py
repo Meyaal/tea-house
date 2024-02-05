@@ -12,7 +12,8 @@ def contact(request):
         if form.is_valid():
             form.save()
             messages.success(
-                request, "Message sent. Thank you! We will get back to you soon."
+                request,
+                "Message sent. Thank you! We will get back to you soon."
             )
             return redirect(reverse("home"))
         else:
