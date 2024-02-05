@@ -21,9 +21,12 @@ class StripeWH_Handler:
         """Send the user a confirmation email"""
         cust_email = order.email
 
-        total = grand_total / (1 + (settings.STANDARD_DELIVERY_PERCENTAGE / 100))
-        delivery = total * (settings.STANDARD_DELIVERY_PERCENTAGE / 100)
-        print(f"\ngrand total: {grand_total}\ntotal: {total}\ndelivery: {delivery}\n")
+        total = grand_total / \
+            (1 + (settings.STANDARD_DELIVERY_PERCENTAGE / 100))
+        delivery = total * \
+            (settings.STANDARD_DELIVERY_PERCENTAGE / 100)
+        print(
+            f"\ngrand total: {grand_total}\ntotal: {total}\ndelivery: {delivery}\n")
 
         subject = render_to_string(
             "checkout/confirmation_emails/confirmation_email_subject.txt",
@@ -40,7 +43,8 @@ class StripeWH_Handler:
             },
         )
 
-        send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, [cust_email])
+        send_mail(subject, body,
+                  settings.DEFAULT_FROM_EMAIL, [cust_email])
 
     def handle_event(self, event):
         """
@@ -73,7 +77,8 @@ class StripeWH_Handler:
         profile = None
         username = intent.metadata.username
         if username != "AnonymousUser":
-            profile = UserProfile.objects.get(user__username=username)
+            profile = UserProfile.objects.get(
+                user__username=username)
             if save_info:
                 profile.default_phone_number = shipping_details.phone
                 profile.default_country = shipping_details.address.country
@@ -108,7 +113,8 @@ class StripeWH_Handler:
                 attempt += 1
                 time.sleep(1)
         if order_exists:
-            self._send_confirmation_email(order=order, grand_total=grand_total)
+            self._send_confirmation_email(
+                order=order, grand_total=grand_total)
             return HttpResponse(
                 content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database',
                 status=200,
@@ -131,7 +137,8 @@ class StripeWH_Handler:
                     stripe_pid=pid,
                 )
                 for item_id, item_data in json.loads(bag).items():
-                    product = Product.objects.get(id=item_id)
+                    product = Product.objects.get(
+                        id=item_id)
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
                             order=order,
@@ -155,7 +162,8 @@ class StripeWH_Handler:
                     content=f'Webhook received: {event["type"]} | ERROR: {e}',
                     status=500,
                 )
-        self._send_confirmation_email(order=order, grand_total=grand_total)
+        self._send_confirmation_email(
+            order=order, grand_total=grand_total)
         return HttpResponse(
             content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
             status=200,

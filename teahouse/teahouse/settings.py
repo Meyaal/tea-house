@@ -34,7 +34,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = os.environ.get("DEBUG")
 
 ALLOWED_HOSTS = [
-    "8000-meyaal-teahouse-r9n8ty34ek6.ws-eu107.gitpod.io",
+    "8000-meyaal-teahouse-r9n8ty34ek6.ws-eu108.gitpod.io",
     "teahouse-231d15547b7f.herokuapp.com",
 ]
 
@@ -121,7 +121,8 @@ WSGI_APPLICATION = "teahouse.wsgi.application"
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 
-DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
+DATABASES = {"default": dj_database_url.parse(
+    os.environ.get("DATABASE_URL"))}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -171,7 +172,8 @@ if "USE_AWS" in os.environ:
     AWS_STORAGE_BUCKET_NAME = "teahouse-s3-bucket"
     AWS_S3_REGION_NAME = "eu-north-1"
     AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
-    AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
+    AWS_SECRET_ACCESS_KEY = os.environ.get(
+        "AWS_SECRET_ACCESS_KEY")
     AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com"
 
     # Static and media files

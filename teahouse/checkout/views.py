@@ -18,7 +18,8 @@ import json
 @require_POST
 def cache_checkout_data(request):
     try:
-        pid = request.POST.get("client_secret").split("_secret")[0]
+        pid = request.POST.get(
+            "client_secret").split("_secret")[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
         stripe.PaymentIntent.modify(
             pid,
@@ -62,13 +63,15 @@ def checkout(request):
         order_form = OrderForm(form_data)
         if order_form.is_valid():
             order = order_form.save(commit=False)
-            pid = request.POST.get("client_secret").split("_secret")[0]
+            pid = request.POST.get(
+                "client_secret").split("_secret")[0]
             order.stripe_pid = pid
             order.original_bag = json.dumps(bag)
             order.save()
             for item_id, item_data in bag.items():
                 try:
-                    product = Product.objects.get(id=item_id)
+                    product = Product.objects.get(
+                        id=item_id)
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
                             order=order,
@@ -108,7 +111,8 @@ def checkout(request):
     else:
         bag = request.session.get("bag", {})
         if not bag:
-            messages.error(request, "There's nothing in your bag at the moment")
+            messages.error(
+                request, "There's nothing in your bag at the moment")
             return redirect(reverse("products"))
 
         current_bag = bag_contents(request)
@@ -123,7 +127,8 @@ def checkout(request):
         # Attempt to prefill the form with any info the user maintains in their profile
         if request.user.is_authenticated:
             try:
-                profile = UserProfile.objects.get(user=request.user)
+                profile = UserProfile.objects.get(
+                    user=request.user)
                 order_form = OrderForm(
                     initial={
                         "full_name": profile.user.get_full_name(),
@@ -166,7 +171,8 @@ def checkout_success(request, order_number):
     Handle successful checkouts
     """
     save_info = request.session.get("save_info")
-    order = get_object_or_404(Order, order_number=order_number)
+    order = get_object_or_404(
+        Order, order_number=order_number)
 
     if request.user.is_authenticated:
         profile = UserProfile.objects.get(user=request.user)
@@ -185,7 +191,8 @@ def checkout_success(request, order_number):
                 "default_street_address2": order.street_address2,
                 "default_county": order.county,
             }
-            user_profile_form = UserProfileForm(profile_data, instance=profile)
+            user_profile_form = UserProfileForm(
+                profile_data, instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
 

@@ -20,14 +20,16 @@ def all_posts(request):
 @login_required
 def add_post(request):
     if not request.user.is_superuser:
-        messages.error(request, "Sorry, only store owners can do that.")
+        messages.error(
+            request, "Sorry, only store owners can do that.")
         return redirect(reverse("home"))
 
     if request.method == "POST":
         form = BlogPostForm(request.POST)
         if form.is_valid():
             post = form.save()
-            messages.success(request, "Successfully added Post!")
+            messages.success(
+                request, "Successfully added Post!")
             return redirect(reverse("post_detail", args=[post.id]))
         else:
             messages.error(
@@ -54,7 +56,8 @@ def add_comment(request, post_id):
             comment.user = request.user.userprofile
             comment.post = post
             comment.save()
-            messages.success(request, "Successfully added Comment!")
+            messages.success(
+                request, "Successfully added Comment!")
             return redirect(reverse("post_detail", args=[post.id]))
         else:
             messages.error(
@@ -76,7 +79,8 @@ def add_comment(request, post_id):
 def delete_post(request, post_id):
     """Delete a Post"""
     if not request.user.is_superuser:
-        messages.error(request, "Sorry, only store owners can do that.")
+        messages.error(
+            request, "Sorry, only store owners can do that.")
         return redirect(reverse("home"))
 
     post = get_object_or_404(BlogPost, pk=post_id)
@@ -91,7 +95,8 @@ def delete_comment(request, comment_id):
     post = get_object_or_404(Comment, pk=comment_id)
 
     if not request.user.is_superuser or not request.user == post.user:
-        messages.error(request, "Sorry, only store owners can do that.")
+        messages.error(
+            request, "Sorry, only store owners can do that.")
         return redirect(reverse("home"))
 
     post.delete()
@@ -102,7 +107,8 @@ def delete_comment(request, comment_id):
 @login_required
 def edit_post(request, post_id):
     if not request.user.is_superuser:
-        messages.error(request, "Sorry, only store owners can do that.")
+        messages.error(
+            request, "Sorry, only store owners can do that.")
         return redirect(reverse("home"))
 
     post = get_object_or_404(BlogPost, pk=post_id)
@@ -111,7 +117,8 @@ def edit_post(request, post_id):
         form = BlogPost(request.POST, instance=post)
         if form.is_valid():
             form.save()
-            messages.success(request, "Successfully updated post!")
+            messages.success(
+                request, "Successfully updated post!")
             return redirect(reverse("post_detail", args=[post.id]))
         else:
             messages.error(
@@ -119,7 +126,8 @@ def edit_post(request, post_id):
             )
     else:
         form = BlogPost(instance=post)
-        messages.info(request, f"You are editing {post.name}")
+        messages.info(
+            request, f"You are editing {post.name}")
 
     template = "blog/edit_post.html"
     context = {
@@ -135,14 +143,16 @@ def edit_comment(request, comment_id):
     post = get_object_or_404(BlogPost, pk=comment_id)
 
     if not request.user.is_superuser or not post.user == request.user:
-        messages.error(request, "Sorry, only store owners can do that.")
+        messages.error(
+            request, "Sorry, only store owners can do that.")
         return redirect(reverse("home"))
 
     if request.method == "POST":
         form = CommentForm(request.POST, instance=post)
         if form.is_valid():
             form.save()
-            messages.success(request, "Successfully updated comment!")
+            messages.success(
+                request, "Successfully updated comment!")
             return redirect(reverse("post_detail", args=[post.id]))
         else:
             messages.error(
@@ -150,7 +160,8 @@ def edit_comment(request, comment_id):
             )
     else:
         form = CommentForm(instance=post)
-        messages.info(request, f"You are editing {post.name}")
+        messages.info(
+            request, f"You are editing {post.name}")
 
     template = "blog/edit_comment.html"
     context = {
@@ -165,7 +176,8 @@ def post_detail(request, post_id):
     """A view to show individual post"""
 
     post = get_object_or_404(BlogPost, pk=post_id)
-    comments = Comment.objects.filter(post=post).order_by("-date")
+    comments = Comment.objects.filter(
+        post=post).order_by("-date")
 
     context = {"post": post, "comments": comments}
 

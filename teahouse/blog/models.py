@@ -22,4 +22,5 @@ class Comment(models.Model):
         UserProfile, on_delete=models.SET_NULL, null=True, blank=True
     )
     date = models.DateTimeField(auto_now_add=True)
-    post = models.ForeignKey(BlogPost, on_delete=models.SET_NULL, null=True, blank=True)
+    post = models.ForeignKey(
+        BlogPost, on_delete=models.SET_NULL, null=True, blank=True)

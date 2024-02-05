@@ -17,7 +17,8 @@ def view_bag(request):
     total = 0
     for item_id, item_data in bag.items():
         product = get_object_or_404(Product, pk=item_id)
-        if isinstance(item_data, dict):  # this means we are dealing with sizes
+        # this means we are dealing with sizes
+        if isinstance(item_data, dict):
             for size, quantity in item_data["items_by_size"].items():
                 total += quantity * product.price
                 bag_items.append(
@@ -39,7 +40,9 @@ def view_bag(request):
             )
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
-        delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
+        delivery = total * \
+            Decimal(
+                settings.STANDARD_DELIVERY_PERCENTAGE / 100)
         free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total
     else:
         delivery = 0
@@ -77,17 +80,24 @@ def add_to_bag(request, item_id):
                 bag[item_id]["items_by_size"][size] += quantity
                 messages.success(
                     request,
-                    f'Updated size {size.upper()} {product.name} quantity to {bag[item_id]["items_by_size"][size]}',
+                    f'''
+                    Updated size {size.upper()} {product.name} quantity to
+                    {bag[item_id]["items_by_size"][size]}
+                    ''',
                 )
             else:
                 bag[item_id]["items_by_size"][size] = quantity
-                messages.success(
-                    request, f"Added size {size.upper()} {product.name} to your bag"
+                messages.success
+                (
+                    request,
+                    f"Added size {size.upper()} {product.name} to your bag"
                 )
         else:
-            bag[item_id] = {"items_by_size": {size: quantity}}
+            bag[item_id] = {
+                "items_by_size": {size: quantity}}
             messages.success(
-                request, f"Added size {size.upper()} {product.name} to your bag"
+                request,
+                f"Added size {size.upper()} {product.name} to your bag"
             )
     else:
         if item_id in list(bag.keys()):
@@ -97,7 +107,8 @@ def add_to_bag(request, item_id):
             )
         else:
             bag[item_id] = quantity
-            messages.success(request, f"Added {product.name} to your bag")
+            messages.success(
+                request, f"Added {product.name} to your bag")
 
     request.session["bag"] = bag
     return redirect(redirect_url)
@@ -118,14 +129,17 @@ def adjust_bag(request, item_id):
             bag[item_id]["items_by_size"][size] = quantity
             messages.success(
                 request,
-                f'Updated size {size.upper()} {product.name} quantity to {bag[item_id]["items_by_size"][size]}',
+                f'''Updated size {size.upper()}
+                {product.name}
+                quantity to {bag[item_id]["items_by_size"][size]}''',
             )
         else:
             del bag[item_id]["items_by_size"][size]
             if not bag[item_id]["items_by_size"]:
                 bag.pop(item_id)
             messages.success(
-                request, f"Removed size {size.upper()} {product.name} from your bag"
+                request,
+                f"Removed size {size.upper()} {product.name} from your bag"
             )
     else:
         if quantity > 0:
@@ -135,7 +149,8 @@ def adjust_bag(request, item_id):
             )
         else:
             bag.pop(item_id)
-            messages.success(request, f"Removed {product.name} from your bag")
+            messages.success(
+                request, f"Removed {product.name} from your bag")
 
     request.session["bag"] = bag
     return redirect(reverse("view_bag"))
@@ -156,11 +171,13 @@ def remove_from_bag(request, item_id):
             if not bag[item_id]["items_by_size"]:
                 bag.pop(item_id)
             messages.success(
-                request, f"Removed size {size.upper()} {product.name} from your bag"
+                request,
+                f"Removed size {size.upper()} {product.name} from your bag"
             )
         else:
             bag.pop(item_id)
-            messages.success(request, f"Removed {product.name} from your bag")
+            messages.success(
+                request, f"Removed {product.name} from your bag")
 
         request.session["bag"] = bag
         return HttpResponse(status=200)

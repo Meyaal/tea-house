@@ -2,8 +2,10 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("", views.all_posts, name="blog"),  # List all posts
-    path("add/", views.add_post, name="add_post"),  # Add a new post
+    # List all posts
+    path("", views.all_posts, name="blog"),
+    # Add a new post
+    path("add/", views.add_post, name="add_post"),
     path(
         "<int:post_id>/add_comment/", views.add_comment, name="add_comment"
     ),  # Add a new comment

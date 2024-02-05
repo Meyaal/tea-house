@@ -10,7 +10,8 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        migrations.swappable_dependency(settings.AUTH_USER_MODEL),
+        migrations.swappable_dependency(
+            settings.AUTH_USER_MODEL),
     ]
 
     operations = [
@@ -28,27 +29,33 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "default_phone",
-                    models.CharField(blank=True, max_length=20, null=True),
+                    models.CharField(
+                        blank=True, max_length=20, null=True),
                 ),
                 (
                     "default_street_address1",
-                    models.CharField(blank=True, max_length=80, null=True),
+                    models.CharField(
+                        blank=True, max_length=80, null=True),
                 ),
                 (
                     "default_street_address2",
-                    models.CharField(blank=True, max_length=80, null=True),
+                    models.CharField(
+                        blank=True, max_length=80, null=True),
                 ),
                 (
                     "default_town_or_city",
-                    models.CharField(blank=True, max_length=40, null=True),
+                    models.CharField(
+                        blank=True, max_length=40, null=True),
                 ),
                 (
                     "default_county",
-                    models.CharField(blank=True, max_length=80, null=True),
+                    models.CharField(
+                        blank=True, max_length=80, null=True),
                 ),
                 (
                     "default_postcode",
-                    models.CharField(blank=True, max_length=20, null=True),
+                    models.CharField(
+                        blank=True, max_length=20, null=True),
                 ),
                 (
                     "default_country",

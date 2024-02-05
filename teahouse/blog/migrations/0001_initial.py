@@ -8,7 +8,8 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ("user_profile", "0002_rename_default_phone_userprofile_default_phone_number"),
+        ("user_profile",
+         "0002_rename_default_phone_userprofile_default_phone_number"),
     ]
 
     operations = [
@@ -25,7 +26,8 @@ class Migration(migrations.Migration):
                     ),
                 ),
                 ("content", models.TextField()),
-                ("date", models.DateTimeField(auto_now_add=True)),
+                ("date", models.DateTimeField(
+                    auto_now_add=True)),
                 (
                     "user",
                     models.ForeignKey(
@@ -51,7 +53,8 @@ class Migration(migrations.Migration):
                 ),
                 ("title", models.CharField(max_length=512)),
                 ("content", models.TextField()),
-                ("date", models.DateTimeField(auto_now_add=True)),
+                ("date", models.DateTimeField(
+                    auto_now_add=True)),
                 (
                     "replys",
                     models.ForeignKey(

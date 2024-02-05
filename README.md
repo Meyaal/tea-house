@@ -407,7 +407,7 @@ os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
 | User Access | Logged in as user |  I can add a comment on a blogpost | Pass |
 | Form Validation Required fields | Filling in form on /contact page | requires name, email and body and contact reason selected to send to Django admin  |  Pass |
 | Contact form submission | submit contact form | successfully sends data to Django admin as expected  |  Pass |
-| Add product on the site | as a super user| I want a product edit form so that I can edit products on the site| Fail |
+| Add product on the site | as a super user| I want a product edit form so that I can edit products on the site| pass |
 | Register | Register for an account | selecting Register in my account directs user to /accounts/signup/ page |  Pass |
 | Login | Login to an account | selecting Login in my account directs user to /accounts/Login/ page |  Pass |
 | Search no results | No search | Entering a no results search returns error message and shows all products  |  Pass |
@@ -420,18 +420,14 @@ os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
 | Deleting Product | Deleting selected product | removed product from shopping pag |  Pass |
 | Edit | Logged in users| Can edit quantity of products in shopping bag| Pass |
 | Deleting Message | Deleting product confirmation | Confirmation message of deletion is shown when successfully deleted | Fail |
-| Defensive Programming | Test for SQL Injection attacks | Users not permitted to access create/update/delete products articles or reviews if they don't have access permission | Pass |
+| SQL injection attacks| Test for SQL Injection attacks | Users not permitted to access create/update/delete products. The user should not be able to send SQL commands to the database from the website | Pass |
 | Logging out | message shown | Logging out as a user / admin prompts "are you sure" message |  Pass |
 | Successfully signed out | signed out message shown | "Are you sure you want to log out?" message shows to user when successfully signed out | Pass |
 | Logging out | Logging out and redirect | Logging out as a user / admin directs user to homepage |  Pass |
 | Footer | social media links | Clicking on the social media icons in the footer open the link in a new tab |  Pass |
 | Footer | Privacy Policy links | Clicking on the Privacy Policy link in the footer diverts user to the /privacy/ page |  Pass |
 
-## Unfixed isseus
-
-* Users that are logged in cannot leave, edit och delete a review on products as expected. 
-
-* As an admin I want a product edit form so that I can edit products on the site, that was not fixed. 
+## Unfixed issues
 
 * Orderform does not looks well and needs to be fixed. 
 ![](docs/Skärmavbild%202023-09-18%20kl.%2012.30.46.png)
@@ -474,10 +470,13 @@ For Ipads and Iphones the bahaviour is same and works as expected.
 -   The website was thoroughly tested on different browsers including Google Chrome, Internet Explorer, Safar and Microsoft Edge. Extensive testing was performed to make sure all the links and navigation work properly. Testing on different devices to make sure it scales properly using the below tools:  
 
 -   [W3C Markup Validator](https://validator.w3.org/nu/) 
-    - No errors or warnings that are relevant was shown 
+    
+- The errors that were shown are due to how I decided to implement certain things and are not functionally relevant. Most of the errors were also from the bootstrap template that I choose or from other 3rd party providers such as mailchimp
+
+
 
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) 
-    - No errors or warnings that are relevant was shown 
+    * No errors were shown.
 
 -   [Python Formatter](https://pypi.org/project/black/) 
     - No errors or warnings that are relevant was shown 
