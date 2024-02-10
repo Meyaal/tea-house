@@ -181,6 +181,11 @@ This website features a striking black and green color scheme that combines soph
 ![](docs/Skärmavbild%202023-09-28%20kl.%2010.43.20.png)
 ![](docs/Skärmavbild%202023-09-28%20kl.%2010.47.32.png)
 
+* When users create a new account, they are asked to verify their email address.
+
+![](docs/Skärmavbild%202024-02-10%20kl.%2010.42.48.png).
+![](docs/Skärmavbild%202024-02-10%20kl.%2011.22.42.png)
+
 
 ### *Products*
 
@@ -438,6 +443,17 @@ os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
 ### Note 
 * Due to time pressure and deadline, I have not been able to implement that.
 
+## Fixed bugs
+
+* My stripe webhook was not working in the way that the purchase did not go through, it has been fixed.
+
+* In the last submission I had failed to validate my code properly, I have validated carefully and there is a justification for the errors that remain in the html and some python files. 
+
+* The customer did not receive an email or notification that the purchase has gone through. It's fixed now.
+
+![](docs/Skärmavbild%202024-02-10%20kl.%2010.59.59.png)
+
+
 
 #### Browsers Tested
 
@@ -471,15 +487,21 @@ For Ipads and Iphones the bahaviour is same and works as expected.
 
 -   [W3C Markup Validator](https://validator.w3.org/nu/) 
     
-- The errors that were shown are due to how I decided to implement certain things and are not functionally relevant. Most of the errors were also from the bootstrap template that I choose or from other 3rd party providers such as mailchimp
-
+- The errors that were shown are due to how I decided to implement certain things and are not functionally relevant. Most of the errors were also from the bootstrap template that I choose or from other 3rd party providers such as mailchimp.
+![](docs/Skärmavbild%202024-02-10%20kl.%2010.39.15.png)
 
 
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) 
     * No errors were shown.
+    ![](docs/Skärmavbild%202024-02-05%20kl.%2013.16.03.png)
+    ![](docs/Skärmavbild%202024-02-05%20kl.%2013.18.07.png)
+    ![](docs/Skärmavbild%202024-02-05%20kl.%2013.19.24.png)
+    ![](docs/Skärmavbild%202024-02-05%20kl.%2013.19.59.png)
 
--   [Python Formatter](https://pypi.org/project/black/) 
-    - No errors or warnings that are relevant was shown 
+-   [Cl python linter](https://pep8ci.herokuapp.com/)Was used to validate all python files, all files are clear. No errors or warnings that are relevant was shown despite a few lines as it shown in the screenshoot. The message says line to long, that it should be 79 instead of 84, and others are 81 and so on. I have not fixed them because it has to do with long for loop statements and it would destroy the program if I write in a different way. I don't want to risk the program being destroyed.
+![](docs/Skärmavbild%202024-02-05%20kl.%2014.58.14.png)
+
+
 
 
 ## Deployment
