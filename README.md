@@ -453,6 +453,8 @@ os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')
 
 ![](docs/Skärmavbild%202024-02-10%20kl.%2010.59.59.png)
 
+## Further Testing
+-   The website was thoroughly tested on different browsers including Google Chrome, Internet Explorer, Safar and Microsoft Edge. Extensive testing was performed to make sure all the links and navigation work properly. 
 
 
 #### Browsers Tested
@@ -480,10 +482,8 @@ For Ipads and Iphones the bahaviour is same and works as expected.
 #### Mailchip appearance looks diffrent on Windos than on macbook air screens. On macbook looks appearence as expected.
 
 
-#### Code validation
-
-## Further Testing
--   The website was thoroughly tested on different browsers including Google Chrome, Internet Explorer, Safar and Microsoft Edge. Extensive testing was performed to make sure all the links and navigation work properly. Testing on different devices to make sure it scales properly using the below tools:  
+## Code validation
+-   The website was thoroughly tested on different browsers including Google Chrome, Internet Explorer, Safar and Microsoft Edge. Extensive testing was performed to make sure all the links and navigation work properly. 
 
 -   [W3C Markup Validator](https://validator.w3.org/nu/) 
     
